@@ -1,32 +1,29 @@
 name: Fetch fresh futures data (daily top-up)
 
-# rev2 changes vs rev1:
-#   - runs binance_data_downloader_rev5.py (was rev3): now tops up
-#     klines + funding + OI/long-short metrics for all 5 symbols,
-#     not just BTC/ETH klines.
-#   - added a timeout guard.
+# rev3 changes vs rev2:
+#   - timeout raised 90 -> 350 min. The FIRST run does a full backfill and is
+#     dominated by the open-interest/long-short "metrics" data, which Binance
+#     only publishes as one-file-per-day dumps (~2,000 files/coin). That first
+#     run realistically takes 2-3 HOURS. Every run AFTER it just grabs the
+#     newest day and finishes in a minute or two.
+#   - the commit/push step now runs with `if: always()`, so if a run is
+#     interrupted partway, whatever was downloaded so far is SAVED. The
+#     downloader is resumable, so the next run picks up where it left off
+#     instead of starting over.
 #
-# IMPORTANT: do the INITIAL backfill LOCALLY first (~30-45 min, mostly the
-# day-by-day metrics dumps) and commit data/ before enabling the schedule.
-# This job is meant only for the fast daily INCREMENTAL top-up. If it runs
-# against an empty data/ it will attempt the full backfill inside Actions,
-# which is slower and noisier than doing it once on your machine.
+# So even if a first run is cut short, progress accumulates and it self-heals.
 
 on:
   schedule:
-    - cron: '0 2 * * *'   # 02:00 UTC daily -- a couple hours after UTC midnight,
-                          # giving Binance's daily dump pipeline time to publish
-                          # the previous day's file
-  workflow_dispatch: {}   # manual trigger from the Actions tab, for testing
-                          # before trusting the schedule
+    - cron: '0 2 * * *'   # 02:00 UTC daily
+  workflow_dispatch: {}   # manual "Run workflow" button
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 90   # guard; incremental runs finish in a minute or two
+    timeout-minutes: 350   # room for the one-time 2-3h backfill (GitHub max is 360)
     permissions:
-      contents: write     # the built-in GITHUB_TOKEN pushes to THIS repo --
-                          # no personal access token needed (public or private)
+      contents: write      # built-in token pushes to this repo; no PAT needed
 
     steps:
       - name: Checkout repo
@@ -40,14 +37,15 @@ jobs:
       - name: Run incremental downloader
         run: python binance_data_downloader_rev5.py
 
-      - name: Commit and push if data changed
+      - name: Commit and push (even if the run was interrupted)
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No new data -- nothing to commit."
           else
-            git commit -m "Daily data refresh: $(date -u +'%Y-%m-%d')"
+            git commit -m "Data refresh: $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
           fi
