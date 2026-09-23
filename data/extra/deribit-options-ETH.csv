@@ -1,0 +1,2 @@
+snap_time,spot,expiry_used,days_to_expiry,atm_iv,put10_iv,call10_iv,skew10_put_minus_call,put_call_oi_ratio_45d,total_oi_45d,max_oi_put_strike_45d,max_oi_call_strike_45d
+1790172491293,2719.71,2026-10-30,36.74,50.63,52.06,51.36,0.7000000000000028,0.6986,1061962.0,2100.0,3000.0
