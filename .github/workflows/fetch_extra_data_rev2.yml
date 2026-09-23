@@ -1,0 +1,53 @@
+name: Fetch extra data + forward log
+
+on:
+  schedule:
+    - cron: '30 2 * * *'
+  workflow_dispatch: {}
+
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
+jobs:
+  update-extra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pandas / numpy
+        run: pip install pandas numpy
+
+      - name: Collect extra sources
+        continue-on-error: true
+        run: python extra_data_downloader_rev2.py
+
+      - name: Build market-state table
+        continue-on-error: true
+        run: python build_market_state_rev2.py
+
+      - name: Update forward signal log
+        continue-on-error: true
+        run: python forward_signal_log_rev1.py
+
+      - name: Commit and push (even if a step failed)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/extra/ data/forward/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "Extra data + forward log: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi
