@@ -1,0 +1,59 @@
+name: Fetch futures data rev4 (gap-safe, 2 runs/day)
+
+# rev4 changes vs rev3 (fetch_data.yml):
+#   - runs binance_data_downloader_rev6.py (gap-safe; writes data/status_download.json and exits
+#     with an error - red X in Actions - if it finds a new gap, bars out of order, a lag over 60h
+#     or a network error)
+#   - a second, catch-up run at 08:00 UTC: Binance's daily archive for yesterday is sometimes not
+#     published yet at 02:00 UTC (assumption: it is out by 08:00 - not verified)
+#   - shares the "data-push" queue with the extra-data workflow so the two never push at once,
+#     and rebases before pushing
+# The commit step still runs with `if: always()`, so downloaded data is saved even when the
+# check fails.
+#
+# INSTALL: add this file to .github/workflows/, then DISABLE the old "Fetch fresh futures data
+# (daily top-up)" workflow (Actions -> that workflow -> "..." -> Disable workflow). Deleting the
+# old file is your call; if both stay enabled the old rev5 downloader still runs at 02:00.
+
+on:
+  schedule:
+    - cron: '0 2 * * *'    # 02:00 UTC
+    - cron: '0 8 * * *'    # 08:00 UTC catch-up
+  workflow_dispatch: {}
+
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run gap-safe downloader + continuity check
+        run: python binance_data_downloader_rev6.py
+
+      - name: Commit and push (even if the check failed)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No new data -- nothing to commit."
+          else
+            git commit -m "Data refresh rev6: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi

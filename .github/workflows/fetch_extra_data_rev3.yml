@@ -1,0 +1,64 @@
+name: Fetch extra data + forward log rev3
+
+# rev3 changes vs fetch_extra_data_rev2.yml:
+#   - the forward-log step runs forward_signal_log_rev2.py (4 coins, F063 + funding, data-based
+#     "live" flag). forward_signals_rev1.csv is no longer updated and stays in the repo as it is.
+#   - a second run at 08:30 UTC, after the 08:00 catch-up candle download, so signals from a day
+#     whose Binance archive came late are still logged the same morning.
+#
+# INSTALL: add this file to .github/workflows/, then DISABLE the old "Fetch extra data + forward log"
+# workflow (Actions -> that workflow -> "..." -> Disable workflow). Needs forward_signal_log_rev2.py
+# and prep_candles_rev2.py in the repo root (next to engine/).
+
+on:
+  schedule:
+    - cron: '30 2 * * *'
+    - cron: '30 8 * * *'
+  workflow_dispatch: {}
+
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
+jobs:
+  update-extra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pandas / numpy
+        run: pip install pandas numpy
+
+      - name: Collect extra sources
+        continue-on-error: true
+        run: python extra_data_downloader_rev2.py
+
+      - name: Build market-state table
+        continue-on-error: true
+        run: python build_market_state_rev2.py
+
+      - name: Update forward signal log (rev2)
+        continue-on-error: true
+        run: python forward_signal_log_rev2.py
+
+      - name: Commit and push (even if a step failed)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/extra/ data/forward/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "Extra data + forward log rev2: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi
