@@ -1,0 +1,51 @@
+name: Daily checks for brief rev1
+
+# Runs after every "Fetch extra data + forward log rev3" run (02:30 and 08:30 UTC) and on demand.
+# Computes the edge gauge, X3 fact sheets + flags, C3 status and the compression range-stop C3 log
+# (brief/daily_checks_rev1.py) and commits data/brief/ - the git commit is the timestamp that proves
+# every flag was logged before its outcome. Information only: nothing here trades or blocks a trade.
+
+on:
+  workflow_run:
+    workflows: ["Fetch extra data + forward log rev3"]
+    types: [completed]
+  workflow_dispatch: {}
+
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
+jobs:
+  daily-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pandas / numpy
+        run: pip install pandas numpy
+
+      - name: Daily checks
+        run: python brief/daily_checks_rev1.py
+
+      - name: Commit and push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/brief/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "Daily checks rev1: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi
