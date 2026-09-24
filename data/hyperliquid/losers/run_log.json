@@ -1,5 +1,5 @@
 {
- "run_utc": "2026-09-24 14:40 UTC",
+ "run_utc": "2026-09-24 17:52 UTC",
  "mode": "losers",
  "settings": {
   "MIN_ALLTIME_PNL": 100000,
@@ -10,8 +10,8 @@
   "SHORTLIST_SIZE": 150
  },
  "errors": [],
- "leaderboard_rows": 46667,
+ "leaderboard_rows": 46786,
  "shortlist_rows": 150,
  "accounts_done": 150,
- "minutes": 101.5
+ "minutes": 100.5
 }
