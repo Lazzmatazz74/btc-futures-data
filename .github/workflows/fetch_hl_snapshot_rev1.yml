@@ -1,0 +1,45 @@
+name: Hyperliquid smart-vs-dumb positioning snapshot
+
+# rev1 - every 4 hours. Picks SMART / DUMB groups once per UTC day from that day's leaderboard only
+# (no hindsight), then records their positions in BTC, ETH, SOL, HYPE, XRP, BNB.
+# Output: data/hyperliquid/snapshot/ (summary.csv is the signal file). Each run takes ~2-5 min.
+
+on:
+  schedule:
+    - cron: '15 */4 * * *'   # 00:15, 04:15, 08:15, 12:15, 16:15, 20:15 UTC
+  workflow_dispatch: {}
+
+concurrency:
+  group: data-push          # same group as the other data jobs - never two pushes at once
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Take snapshot
+        run: python hl_daily_snapshot_rev1.py
+
+      - name: Commit and push (even if interrupted)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/hyperliquid/snapshot/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No new snapshot data."
+          else
+            git commit -m "HL snapshot: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi
