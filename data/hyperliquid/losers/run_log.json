@@ -1,0 +1,17 @@
+{
+ "run_utc": "2026-09-24 14:40 UTC",
+ "mode": "losers",
+ "settings": {
+  "MIN_ALLTIME_PNL": 100000,
+  "MIN_MONTH_PNL": 0,
+  "MIN_ACCOUNT_VALUE": 50000,
+  "MAX_ACCOUNT_VALUE": 20000000,
+  "MAX_VLM_TO_ACCT": 3000,
+  "SHORTLIST_SIZE": 150
+ },
+ "errors": [],
+ "leaderboard_rows": 46667,
+ "shortlist_rows": 150,
+ "accounts_done": 150,
+ "minutes": 101.5
+}
