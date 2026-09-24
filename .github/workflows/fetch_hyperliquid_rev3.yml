@@ -1,0 +1,104 @@
+name: Fetch Hyperliquid trader screen (rev3)
+
+# rev3 changes vs rev2:
+#   - SAFE PUSH: the download is saved to a temp folder, the job switches to the LATEST main,
+#     copies only this mode's files back in, commits and pushes - up to 5 attempts.
+#     rev2 used "git pull --rebase", which failed (exit code 1) when a re-run started from an old
+#     commit and main already held files for the same mode -> a 1h40m download was lost.
+#   - own concurrency group "hl-screen" instead of "data-push": a 1.5 h screen no longer blocks the
+#     daily candle / extra-data jobs (GitHub keeps only ONE pending job per group and cancels older
+#     pending ones, so a long job in the shared group could silently cancel a data refresh).
+#     Pushes from different jobs touch different folders, so the retry loop is enough.
+#   - winners mode writes to data/hyperliquid/ itself: its copy-back EXCLUDES losers/, random/ and
+#     snapshot/ so the snapshot history can never be overwritten by an older copy.
+#   - actions/checkout@v5 + actions/setup-python@v6 (Node 24; removes the Node 20 warning).
+#   - nothing is ever deleted: files from an earlier partial run stay unless overwritten.
+#
+# ALWAYS start it with "Run workflow" (not "Re-run"): a re-run reuses the old commit's workflow.
+# Manual run only. Expected run time: roughly 60-110 min for 150 accounts.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Which accounts to download'
+        required: true
+        default: 'losers'
+        type: choice
+        options: [losers, random, winners]
+      min_alltime_pnl:
+        description: 'Min all-time PnL, USD (default 100000)'
+        required: false
+        default: ''
+      min_account_value:
+        description: 'Min account value, USD (default 50000)'
+        required: false
+        default: ''
+      max_account_value:
+        description: 'Max account value, USD (default 20000000)'
+        required: false
+        default: ''
+      max_vlm_to_acct:
+        description: 'Max all-time volume / account value (default 3000)'
+        required: false
+        default: ''
+      shortlist_size:
+        description: 'Number of accounts to download (default 150)'
+        required: false
+        default: ''
+
+concurrency:
+  group: hl-screen
+  cancel-in-progress: false
+
+jobs:
+  hyperliquid-screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Run Hyperliquid screen
+        env:
+          HL_MIN_ALLTIME_PNL: ${{ github.event.inputs.min_alltime_pnl }}
+          HL_MIN_ACCOUNT_VALUE: ${{ github.event.inputs.min_account_value }}
+          HL_MAX_ACCOUNT_VALUE: ${{ github.event.inputs.max_account_value }}
+          HL_MAX_VLM_TO_ACCT: ${{ github.event.inputs.max_vlm_to_acct }}
+          HL_SHORTLIST_SIZE: ${{ github.event.inputs.shortlist_size }}
+          HL_MODE: ${{ github.event.inputs.mode }}
+        run: python hl_trader_screen_rev2.py
+
+      - name: Safe commit and push (even if interrupted)
+        if: always()
+        env:
+          MODE: ${{ github.event.inputs.mode }}
+        run: |
+          set -u
+          if [ "$MODE" = "winners" ]; then OUT="data/hyperliquid"; else OUT="data/hyperliquid/$MODE"; fi
+          if [ ! -d "$OUT" ]; then echo "No output folder $OUT - nothing to save."; exit 0; fi
+          SAVE="$RUNNER_TEMP/hl_out"
+          mkdir -p "$SAVE"
+          tar -C "$OUT" --exclude=./losers --exclude=./random --exclude=./snapshot -cf - . | tar -C "$SAVE" -xf -
+          echo "Saved $(find "$SAVE" -type f | wc -l) files from $OUT"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p "$OUT"
+            tar -C "$SAVE" -cf - . | tar -C "$OUT" -xf -
+            git add "$OUT"
+            if git diff --cached --quiet; then echo "No new Hyperliquid data."; exit 0; fi
+            git commit -q -m "Hyperliquid screen ($MODE): $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if git push origin HEAD:main; then echo "Pushed on attempt $attempt."; exit 0; fi
+            echo "Push attempt $attempt failed - retrying in $((attempt * 20)) s"
+            sleep $((attempt * 20))
+          done
+          echo "Push failed 5 times."; exit 1

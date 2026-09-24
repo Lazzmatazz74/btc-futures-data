@@ -1,0 +1,65 @@
+name: Hyperliquid smart-vs-dumb positioning snapshot (rev2)
+
+# rev2 changes vs rev1 (same script, hl_daily_snapshot_rev1.py, same schedule):
+#   - SAFE PUSH: output saved to a temp folder, job switches to the LATEST main, copies
+#     data/hyperliquid/snapshot/ back in, commits and pushes - up to 5 attempts.
+#     (rev1 used "git pull --rebase" - one failed rebase would lose a 4-hourly snapshot.)
+#   - own concurrency group "hl-snapshot" instead of "data-push": GitHub keeps only ONE pending
+#     job per group and cancels older pending ones, so in the shared group a snapshot could
+#     silently cancel a queued daily data refresh (or be cancelled by one).
+#   - actions/checkout@v5 + actions/setup-python@v6 (Node 24).
+#
+# INSTALL: add this file, then DISABLE "Hyperliquid smart-vs-dumb positioning snapshot" (rev1)
+# in Actions -> that workflow -> "..." -> Disable workflow. If both stay on, every snapshot runs twice.
+# Output: data/hyperliquid/snapshot/ (summary.csv is the signal file). Each run takes ~2 min.
+
+on:
+  schedule:
+    - cron: '15 */4 * * *'   # 00:15, 04:15, 08:15, 12:15, 16:15, 20:15 UTC
+  workflow_dispatch: {}
+
+concurrency:
+  group: hl-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Take snapshot
+        run: python hl_daily_snapshot_rev1.py
+
+      - name: Safe commit and push (even if interrupted)
+        if: always()
+        run: |
+          set -u
+          OUT="data/hyperliquid/snapshot"
+          if [ ! -d "$OUT" ]; then echo "No snapshot folder - nothing to save."; exit 0; fi
+          SAVE="$RUNNER_TEMP/snap_out"
+          mkdir -p "$SAVE"
+          tar -C "$OUT" -cf - . | tar -C "$SAVE" -xf -
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p "$OUT"
+            tar -C "$SAVE" -cf - . | tar -C "$OUT" -xf -
+            git add "$OUT"
+            if git diff --cached --quiet; then echo "No new snapshot data."; exit 0; fi
+            git commit -q -m "HL snapshot: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if git push origin HEAD:main; then echo "Pushed on attempt $attempt."; exit 0; fi
+            echo "Push attempt $attempt failed - retrying in $((attempt * 20)) s"
+            sleep $((attempt * 20))
+          done
+          echo "Push failed 5 times."; exit 1
