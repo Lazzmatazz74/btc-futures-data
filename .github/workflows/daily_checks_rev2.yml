@@ -1,0 +1,60 @@
+name: Daily checks for brief rev2
+
+# rev2 changes vs daily_checks_rev1.yml (same script brief/daily_checks_rev1.py, same outputs):
+#   - listens to "Fetch extra data + forward log rev4" (rev3 is replaced).
+#   - SAFE PUSH: if the push is rejected, the job moves to the LATEST main and simply re-runs the checks
+#     there (the logs are append-only and first_logged_utc is kept), then pushes - up to 3 attempts.
+#   - own concurrency group "daily-checks": GitHub keeps only one PENDING job per group, so sharing
+#     "data-push" could silently cancel a queued data refresh (or this job).
+#
+# INSTALL: add this file, then DISABLE "Daily checks for brief rev1" in Actions.
+
+on:
+  workflow_run:
+    workflows: ["Fetch extra data + forward log rev4"]
+    types: [completed]
+  workflow_dispatch: {}
+
+concurrency:
+  group: daily-checks
+  cancel-in-progress: false
+
+jobs:
+  daily-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pandas / numpy
+        run: pip install pandas numpy
+
+      - name: Daily checks
+        run: python brief/daily_checks_rev1.py
+
+      - name: Safe commit and push
+        if: always()
+        run: |
+          set -u
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git add data/brief/ 2>/dev/null || true
+            if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+            git commit -q -m "Daily checks rev2: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if git push origin HEAD:main; then echo "Pushed on attempt $attempt."; exit 0; fi
+            echo "Push attempt $attempt failed - re-running the checks on the latest main."
+            sleep $((attempt * 20))
+            git fetch origin main
+            git reset --hard origin/main
+            python brief/daily_checks_rev1.py
+          done
+          echo "Push failed 3 times."; exit 1
