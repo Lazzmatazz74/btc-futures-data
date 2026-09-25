@@ -1,0 +1,81 @@
+name: Fetch extra data + forward log rev5
+
+# rev5 changes vs fetch_extra_data_rev4.yml (same scripts, same schedule, same safe push):
+#   - NEW LAST STEP: starts "Daily checks for brief rev2" directly (workflow_dispatch via the
+#     built-in token - GitHub allows this). Reason: the "workflow_run" trigger in daily_checks_rev2
+#     (and rev1 before it) never fired automatically in this repo (checked 2026-09-25: only manual runs).
+#   - Runs even if the push step failed, so the checks always run on the latest main.
+#   - New name -> daily_checks_rev2's old workflow_run trigger (listens to "...rev4") can't double-fire.
+#
+# INSTALL: add this file, then DISABLE "Fetch extra data + forward log rev4" in Actions.
+#   Keep "Daily checks for brief rev2" ENABLED (this workflow starts it).
+
+on:
+  schedule:
+    - cron: '30 2 * * *'
+    - cron: '30 8 * * *'
+  workflow_dispatch: {}
+
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
+jobs:
+  update-extra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+      actions: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pandas / numpy
+        run: pip install pandas numpy
+
+      - name: Collect extra sources
+        continue-on-error: true
+        run: python extra_data_downloader_rev2.py
+
+      - name: Build market-state table
+        continue-on-error: true
+        run: python build_market_state_rev2.py
+
+      - name: Update forward signal log (rev2)
+        continue-on-error: true
+        run: python forward_signal_log_rev2.py
+
+      - name: Safe commit and push (even if a step failed)
+        if: always()
+        run: |
+          set -u
+          SAVE="$RUNNER_TEMP/extra_out"
+          mkdir -p "$SAVE"
+          if [ -d data/extra ]; then tar -C data/extra -cf - . | tar -C "$SAVE" -xf -; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git add data/extra/ data/forward/ 2>/dev/null || true
+            if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+            git commit -q -m "Extra data + forward log rev5: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if git push origin HEAD:main; then echo "Pushed on attempt $attempt."; exit 0; fi
+            echo "Push attempt $attempt failed - moving to the latest main and merging again."
+            sleep $((attempt * 20))
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p data/extra
+            python merge_extra_rev1.py "$SAVE" data/extra
+            python forward_signal_log_rev2.py || echo "forward log re-run failed - extra data is still pushed"
+          done
+          echo "Push failed 5 times."; exit 1
+
+      - name: Start "Daily checks for brief rev2"
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run daily_checks_rev2.yml --ref main --repo "$GITHUB_REPOSITORY"
