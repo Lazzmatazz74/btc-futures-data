@@ -61,38 +61,38 @@
  },
  "coinbase BTC-USD 1h": {
   "file": "data/extra/coinbase-BTC-USD-1h.csv",
-  "rows": 59080,
-  "last_utc": "2026-09-28 07:00",
+  "rows": 59090,
+  "last_utc": "2026-09-28 17:00",
   "error": null
  },
  "coinbase ETH-USD 1h": {
   "file": "data/extra/coinbase-ETH-USD-1h.csv",
-  "rows": 59080,
-  "last_utc": "2026-09-28 07:00",
+  "rows": 59090,
+  "last_utc": "2026-09-28 17:00",
   "error": null
  },
  "deribit DVOL BTC 1h": {
   "file": "data/extra/deribit-dvol-BTC-1h.csv",
-  "rows": 48344,
-  "last_utc": "2026-09-28 07:00",
+  "rows": 48354,
+  "last_utc": "2026-09-28 17:00",
   "error": null
  },
  "deribit options BTC": {
   "file": "data/extra/deribit-options-BTC.csv",
-  "rows": 14,
-  "last_utc": "2026-09-28 08:48",
+  "rows": 15,
+  "last_utc": "2026-09-28 18:53",
   "error": null
  },
  "deribit DVOL ETH 1h": {
   "file": "data/extra/deribit-dvol-ETH-1h.csv",
-  "rows": 48344,
-  "last_utc": "2026-09-28 07:00",
+  "rows": 48354,
+  "last_utc": "2026-09-28 17:00",
   "error": null
  },
  "deribit options ETH": {
   "file": "data/extra/deribit-options-ETH.csv",
-  "rows": 14,
-  "last_utc": "2026-09-28 08:48",
+  "rows": 15,
+  "last_utc": "2026-09-28 18:53",
   "error": null
  },
  "cftc CME bitcoin TFF": {
@@ -101,5 +101,5 @@
   "last_utc": "2026-09-22 00:00",
   "error": null
  },
- "_run_utc": "2026-09-28 08:48"
+ "_run_utc": "2026-09-28 18:53"
 }
