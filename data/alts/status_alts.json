@@ -1,18 +1,20 @@
 {
  "problems": [],
  "symbols": {},
- "categories": {},
+ "categories": {
+  "skipped": "no CG_DEMO_KEY secret"
+ },
  "rows_added": 0,
- "gap_days_filled": 36,
- "new_unfillable_gap_days": 5,
+ "gap_days_filled": 282,
+ "new_unfillable_gap_days": 0,
  "known_gap_days": 5,
  "symbols_total": 900,
  "active": 739,
  "ended": 161,
  "old_coins": 80,
- "with_missing_days": 49,
- "missing_days_total": 287,
+ "with_missing_days": 1,
+ "missing_days_total": 5,
  "ended_with_zero_volume_tail": 151,
- "run_utc": "2026-10-03 09:42",
+ "run_utc": "2026-10-03 09:48",
  "ok": true
 }
