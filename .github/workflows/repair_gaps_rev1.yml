@@ -1,0 +1,53 @@
+name: Repair kline gaps rev1 (one-time, manual)
+
+# Runs repair_kline_gaps_rev1.py: fills holes in data/<SYMBOL>-<tf>.csv from Binance's DAILY archives
+# (XRPUSDT 26-28 Feb 2022 and 1-2 Apr 2022, all four timeframes). Only adds rows; nothing is removed.
+# Manual only (no schedule). Same "data-push" queue as the daily refresh, so the two never write the
+# same files at once. Result: data/status_gap_repair.json.
+# Run: Actions -> this workflow -> Run workflow. check_only = true reports without writing.
+
+on:
+  workflow_dispatch:
+    inputs:
+      check_only:
+        description: 'true = report only, write nothing'
+        default: 'false'
+
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Repair
+        env:
+          CHECK_ONLY: ${{ github.event.inputs.check_only || 'false' }}
+        run: |
+          python repair_kline_gaps_rev1.py --selftest
+          if [ "$CHECK_ONLY" = "true" ]; then python repair_kline_gaps_rev1.py --check; else python repair_kline_gaps_rev1.py; fi
+
+      - name: Commit and push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Kline gap repair rev1: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi
