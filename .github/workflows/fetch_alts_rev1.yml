@@ -1,0 +1,84 @@
+name: Fetch alt universe rev1 (all USDT perps 1d + funding + categories, weekly)
+
+# Runs alt_universe_downloader_rev1.py (Trading/ALT_RESEARCH_PLAN_rev1.md).
+#   Output: data/alts/  (1d/<SYMBOL>.csv, funding/<SYMBOL>.csv, symbols.csv, categories_latest.csv,
+#   categories/categories_<date>.csv, status_alts.json). Nothing else in the repo is touched.
+#   - weekly, Monday 03:37 UTC (the research horizon is days to weeks; daily is not needed)
+#   - own concurrency group "alts": GitHub keeps only ONE pending job per group, so sharing
+#     "data-push" could silently cancel a queued daily refresh
+#   - safe push: output saved to a temp folder, job switches to the latest main, copies data/alts
+#     back in, commits and pushes - up to 5 attempts
+#   - categories need the repo secret CG_DEMO_KEY (free CoinGecko Demo key). Without it prices and
+#     funding still download; categories are skipped and status_alts.json says so.
+#
+# FIRST RUN (the script was not tested against the live endpoints when written):
+#   Actions -> this workflow -> Run workflow -> limit = 5. Check the log and data/alts/.
+#   If green: Run workflow again with limit = 0 (full backfill, roughly 600 symbols; expect 30-90 min).
+
+on:
+  schedule:
+    - cron: '37 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Only the first N symbols (0 = all)'
+        default: '0'
+      mode:
+        description: 'all | prices | categories'
+        default: 'all'
+      symbols:
+        description: 'Optional comma list, e.g. LTCUSDT,DOGEUSDT (overrides the symbol listing)'
+        default: ''
+
+concurrency:
+  group: alts
+  cancel-in-progress: false
+
+jobs:
+  alts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Download alt universe
+        env:
+          CG_DEMO_KEY: ${{ secrets.CG_DEMO_KEY }}
+          IN_LIMIT: ${{ github.event.inputs.limit || '0' }}
+          IN_MODE: ${{ github.event.inputs.mode || 'all' }}
+          IN_SYMBOLS: ${{ github.event.inputs.symbols || '' }}
+        run: |
+          python alt_universe_downloader_rev1.py --selftest
+          python alt_universe_downloader_rev1.py --limit "$IN_LIMIT" --mode "$IN_MODE" --symbols "$IN_SYMBOLS"
+
+      - name: Safe commit and push (even if the check failed)
+        if: always()
+        run: |
+          set -u
+          OUT="data/alts"
+          if [ ! -d "$OUT" ]; then echo "No data/alts folder - nothing to save."; exit 0; fi
+          SAVE="$RUNNER_TEMP/alts_out"
+          mkdir -p "$SAVE"
+          tar -C "$OUT" -cf - . | tar -C "$SAVE" -xf -
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p "$OUT"
+            tar -C "$SAVE" -cf - . | tar -C "$OUT" -xf -
+            git add "$OUT"
+            if git diff --cached --quiet; then echo "No new alt data."; exit 0; fi
+            git commit -q -m "Alt universe rev1: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if git push origin HEAD:main; then echo "Pushed on attempt $attempt."; exit 0; fi
+            echo "Push attempt $attempt failed - retrying in $((attempt * 20)) s"
+            sleep $((attempt * 20))
+          done
+          echo "Push failed 5 times."; exit 1
