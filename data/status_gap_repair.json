@@ -1,0 +1,64 @@
+{
+ "run_utc": "2026-10-03 13:43",
+ "check_only": false,
+ "files": {
+  "XRPUSDT-5m": {
+   "missing_bars": 1440,
+   "days_with_holes": [
+    "2022-02-26",
+    "2022-02-27",
+    "2022-02-28",
+    "2022-04-01",
+    "2022-04-02"
+   ],
+   "rows_added": 1440,
+   "days_not_in_archive": [],
+   "still_missing_bars": 0,
+   "error": null
+  },
+  "XRPUSDT-15m": {
+   "missing_bars": 480,
+   "days_with_holes": [
+    "2022-02-26",
+    "2022-02-27",
+    "2022-02-28",
+    "2022-04-01",
+    "2022-04-02"
+   ],
+   "rows_added": 480,
+   "days_not_in_archive": [],
+   "still_missing_bars": 0,
+   "error": null
+  },
+  "XRPUSDT-1h": {
+   "missing_bars": 120,
+   "days_with_holes": [
+    "2022-02-26",
+    "2022-02-27",
+    "2022-02-28",
+    "2022-04-01",
+    "2022-04-02"
+   ],
+   "rows_added": 120,
+   "days_not_in_archive": [],
+   "still_missing_bars": 0,
+   "error": null
+  },
+  "XRPUSDT-1d": {
+   "missing_bars": 5,
+   "days_with_holes": [
+    "2022-02-26",
+    "2022-02-27",
+    "2022-02-28",
+    "2022-04-01",
+    "2022-04-02"
+   ],
+   "rows_added": 5,
+   "days_not_in_archive": [],
+   "still_missing_bars": 0,
+   "error": null
+  }
+ },
+ "rows_added": 2045,
+ "still_missing_bars": 0
+}
