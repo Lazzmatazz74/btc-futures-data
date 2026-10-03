@@ -4,12 +4,12 @@
  "categories": {
   "skipped": "no CG_DEMO_KEY secret"
  },
- "rows_added": 19847,
- "symbols_total": 5,
- "active": 4,
- "ended": 1,
- "old_coins": 0,
- "with_missing_days": 0,
- "run_utc": "2026-10-03 08:19",
+ "rows_added": 3375699,
+ "symbols_total": 900,
+ "active": 869,
+ "ended": 31,
+ "old_coins": 80,
+ "with_missing_days": 52,
+ "run_utc": "2026-10-03 09:05",
  "ok": true
 }
