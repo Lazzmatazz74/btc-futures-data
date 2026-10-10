@@ -1,4 +1,4 @@
-# X3 signal dossiers — data to 2026-10-09 00:00 UTC
+# X3 signal dossiers — data to 2026-10-10 00:00 UTC
 
 Information only — no call. The flags have NOT passed their test (Workstream B: primary p = 0.92); they must never block a trade. Live verdict after 60 live signals.
 
@@ -50,7 +50,7 @@ Information only — no call. The flags have NOT passed their test (Workstream B
 - Flags: none
 - Data gaps: funding after 2026-08-31 not settled (counted 0); no DVOL for this coin; no Hyperliquid snapshot history
 
-## BTC SHORT — PW FSB — entry 2026-10-08 13:00 UTC (OPEN)
+## BTC SHORT — PW FSB — entry 2026-10-08 13:00 UTC (closed 2026-10-09 12:00, -1.05R)
 
 | Entry | Stop | Target (3R) | Stop % | G3 | 200-DMA |
 |---|---|---|---|---|---|
