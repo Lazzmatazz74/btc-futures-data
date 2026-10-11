@@ -1,27 +1,27 @@
 {
- "run_utc": "2026-10-11 02:48:47",
- "data_end": "2026-10-10 00:00:00",
- "data_end_latest_coin": "2026-10-10 00:00:00",
+ "run_utc": "2026-10-11 08:49:25",
+ "data_end": "2026-10-11 00:00:00",
+ "data_end_latest_coin": "2026-10-11 00:00:00",
  "previous_run_data_end": "2026-10-10 00:00:00",
  "unknown_gaps": [],
  "health": {
-  "data_end_utc": "2026-10-10 00:00:00",
+  "data_end_utc": "2026-10-11 00:00:00",
   "download_ok": true,
   "download_problems": [],
-  "download_run_utc": "2026-10-11 02:05",
+  "download_run_utc": "2026-10-11 08:09",
   "lag_hours": {
-   "BTCUSDT-15m": 26.1,
-   "ETHUSDT-15m": 26.1,
-   "XRPUSDT-15m": 26.1,
-   "BNBUSDT-15m": 26.1,
-   "HYPEUSDT-15m": 26.1,
-   "LTCUSDT-15m": 26.1
+   "BTCUSDT-15m": 8.2,
+   "ETHUSDT-15m": 8.2,
+   "XRPUSDT-15m": 8.2,
+   "BNBUSDT-15m": 8.2,
+   "HYPEUSDT-15m": 8.2,
+   "LTCUSDT-15m": 8.2
   },
   "metrics_density_7d": {
-   "BTC": 0.135,
-   "ETH": 0.14,
-   "XRP": 0.13,
-   "BNB": 0.135
+   "BTC": 0.198,
+   "ETH": 0.205,
+   "XRP": 0.198,
+   "BNB": 0.205
   },
   "funding_settled_until": {
    "BTC": "2026-09-30 16:00:00.002000",
@@ -46,30 +46,6 @@
   "note": "GAUGE ONLY - every historical alarm was a false alarm (edge_health_rev1); never a stop signal"
  },
  "x3_new_signals": [
-  {
-   "sym": "ETH",
-   "side": "short",
-   "lvl": "PW",
-   "ent": "ACC",
-   "entry_time": "2026-10-07 06:00:00",
-   "entry": 2619.48,
-   "stop": 2659.53,
-   "flags": "",
-   "status": "closed",
-   "R_F063": 2.95974
-  },
-  {
-   "sym": "XRP",
-   "side": "short",
-   "lvl": "PW",
-   "ent": "FSB",
-   "entry_time": "2026-10-07 13:45:00",
-   "entry": 1.4316,
-   "stop": 1.477,
-   "flags": "",
-   "status": "open",
-   "R_F063": null
-  },
   {
    "sym": "BTC",
    "side": "short",
@@ -102,7 +78,7 @@
    "entry_time": "2026-10-07 13:45:00",
    "entry": 1.4316,
    "stop": 1.477,
-   "mark_R_F063": 0.788759
+   "mark_R_F063": 0.641135
   },
   {
    "sym": "BNB",
@@ -110,33 +86,33 @@
    "entry_time": "2026-10-08 19:00:00",
    "entry": 727.12,
    "stop": 757.68,
-   "mark_R_F063": -0.508601
+   "mark_R_F063": -0.774391
   }
  ],
  "c3_status": {
   "BTC": {
-   "day": "2026-10-09",
+   "day": "2026-10-10",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": -0.0576
+   "oi_chg_7d": -0.054479
   },
   "ETH": {
-   "day": "2026-10-09",
+   "day": "2026-10-10",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": 0.016763
+   "oi_chg_7d": 0.01092
   },
   "XRP": {
-   "day": "2026-10-09",
-   "C3": false,
-   "quiet": false,
-   "oi_chg_7d": -0.05402
-  },
-  "BNB": {
-   "day": "2026-10-09",
+   "day": "2026-10-10",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": -0.027022
+   "oi_chg_7d": -0.046666
+  },
+  "BNB": {
+   "day": "2026-10-10",
+   "C3": false,
+   "quiet": true,
+   "oi_chg_7d": -0.078232
   }
  },
  "c3_record": "C3 on: 21.6% of days followed by a top-20% 7-day move vs 18.0% base (lift 1.20); no direction information (Workstream C). Information only.",
