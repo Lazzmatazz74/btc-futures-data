@@ -1,27 +1,27 @@
 {
- "run_utc": "2026-10-13 02:49:51",
+ "run_utc": "2026-10-13 08:53:02",
  "data_end": "2026-10-12 00:00:00",
- "data_end_latest_coin": "2026-10-12 00:00:00",
- "previous_run_data_end": "2026-10-11 00:00:00",
+ "data_end_latest_coin": "2026-10-13 00:00:00",
+ "previous_run_data_end": "2026-10-12 00:00:00",
  "unknown_gaps": [],
  "health": {
   "data_end_utc": "2026-10-12 00:00:00",
   "download_ok": true,
   "download_problems": [],
-  "download_run_utc": "2026-10-13 02:07",
+  "download_run_utc": "2026-10-13 08:12",
   "lag_hours": {
-   "BTCUSDT-15m": 26.1,
-   "ETHUSDT-15m": 26.1,
-   "XRPUSDT-15m": 26.1,
-   "BNBUSDT-15m": 26.1,
-   "HYPEUSDT-15m": 26.1,
-   "LTCUSDT-15m": 26.1
+   "BTCUSDT-15m": 8.2,
+   "ETHUSDT-15m": 8.2,
+   "XRPUSDT-15m": 32.2,
+   "BNBUSDT-15m": 8.2,
+   "HYPEUSDT-15m": 32.2,
+   "LTCUSDT-15m": 32.2
   },
   "metrics_density_7d": {
-   "BTC": 0.195,
-   "ETH": 0.205,
-   "XRP": 0.211,
-   "BNB": 0.205
+   "BTC": 0.202,
+   "ETH": 0.214,
+   "XRP": 0.22,
+   "BNB": 0.215
   },
   "funding_settled_until": {
    "BTC": "2026-09-30 16:00:00.002000",
@@ -58,16 +58,16 @@
  ],
  "c3_status": {
   "BTC": {
-   "day": "2026-10-11",
+   "day": "2026-10-12",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": -0.052064
+   "oi_chg_7d": -0.009312
   },
   "ETH": {
-   "day": "2026-10-11",
+   "day": "2026-10-12",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": 0.007054
+   "oi_chg_7d": -0.000987
   },
   "XRP": {
    "day": "2026-10-11",
@@ -76,10 +76,10 @@
    "oi_chg_7d": -0.074873
   },
   "BNB": {
-   "day": "2026-10-11",
+   "day": "2026-10-12",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": -0.072384
+   "oi_chg_7d": -0.063469
   }
  },
  "c3_record": "C3 on: 21.6% of days followed by a top-20% 7-day move vs 18.0% base (lift 1.20); no direction information (Workstream C). Information only.",
@@ -88,15 +88,15 @@
    "sym": "XRP",
    "entry_time": "2026-10-11 16:00:00",
    "C3_at_entry": false,
-   "live": true,
+   "live": false,
    "status": "open"
   },
   {
    "sym": "BTC",
    "entry_time": "2026-10-11 16:00:00",
    "C3_at_entry": false,
-   "live": true,
-   "status": "open"
+   "live": false,
+   "status": "closed"
   }
  ],
  "scoreboards": {
@@ -120,12 +120,12 @@
    "target": 30,
    "n_live_closed_C3on": 0,
    "on_mean": null,
-   "n_live_closed_C3off": 2,
-   "off_mean": -0.875489
+   "n_live_closed_C3off": 3,
+   "off_mean": -0.783011
   }
  },
  "new_rows": {
   "flag_log": 0,
-  "comp_log": 2
+  "comp_log": 0
  }
 }
