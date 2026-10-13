@@ -7,8 +7,8 @@
  },
  "BTCUSDT spot 1h": {
   "file": "data/extra/BTCUSDT-spot-1h.csv",
-  "rows": 59393,
-  "last_utc": "2026-10-11 23:00",
+  "rows": 59417,
+  "last_utc": "2026-10-12 23:00",
   "error": null
  },
  "ETHUSDT premium 1h": {
@@ -19,20 +19,20 @@
  },
  "ETHUSDT spot 1h": {
   "file": "data/extra/ETHUSDT-spot-1h.csv",
-  "rows": 59393,
-  "last_utc": "2026-10-11 23:00",
+  "rows": 59417,
+  "last_utc": "2026-10-12 23:00",
   "error": null
  },
  "XRPUSDT premium 1h": {
   "file": "data/extra/XRPUSDT-premium-1h.csv",
-  "rows": 59103,
-  "last_utc": "2026-10-10 23:00",
+  "rows": 59127,
+  "last_utc": "2026-10-11 23:00",
   "error": null
  },
  "XRPUSDT spot 1h": {
   "file": "data/extra/XRPUSDT-spot-1h.csv",
-  "rows": 59393,
-  "last_utc": "2026-10-11 23:00",
+  "rows": 59417,
+  "last_utc": "2026-10-12 23:00",
   "error": null
  },
  "BNBUSDT premium 1h": {
@@ -43,14 +43,14 @@
  },
  "BNBUSDT spot 1h": {
   "file": "data/extra/BNBUSDT-spot-1h.csv",
-  "rows": 59393,
-  "last_utc": "2026-10-11 23:00",
+  "rows": 59417,
+  "last_utc": "2026-10-12 23:00",
   "error": null
  },
  "HYPEUSDT premium 1h": {
   "file": "data/extra/HYPEUSDT-premium-1h.csv",
-  "rows": 11942,
-  "last_utc": "2026-10-10 23:00",
+  "rows": 11966,
+  "last_utc": "2026-10-11 23:00",
   "error": null
  },
  "HYPEUSDT spot 1h": {
@@ -61,38 +61,38 @@
  },
  "coinbase BTC-USD 1h": {
   "file": "data/extra/coinbase-BTC-USD-1h.csv",
-  "rows": 59416,
-  "last_utc": "2026-10-12 07:00",
+  "rows": 59434,
+  "last_utc": "2026-10-13 01:00",
   "error": null
  },
  "coinbase ETH-USD 1h": {
   "file": "data/extra/coinbase-ETH-USD-1h.csv",
-  "rows": 59416,
-  "last_utc": "2026-10-12 07:00",
+  "rows": 59434,
+  "last_utc": "2026-10-13 01:00",
   "error": null
  },
  "deribit DVOL BTC 1h": {
   "file": "data/extra/deribit-dvol-BTC-1h.csv",
-  "rows": 48680,
-  "last_utc": "2026-10-12 07:00",
+  "rows": 48698,
+  "last_utc": "2026-10-13 01:00",
   "error": null
  },
  "deribit options BTC": {
   "file": "data/extra/deribit-options-BTC.csv",
-  "rows": 43,
-  "last_utc": "2026-10-12 08:52",
+  "rows": 44,
+  "last_utc": "2026-10-13 02:48",
   "error": null
  },
  "deribit DVOL ETH 1h": {
   "file": "data/extra/deribit-dvol-ETH-1h.csv",
-  "rows": 48680,
-  "last_utc": "2026-10-12 07:00",
+  "rows": 48698,
+  "last_utc": "2026-10-13 01:00",
   "error": null
  },
  "deribit options ETH": {
   "file": "data/extra/deribit-options-ETH.csv",
-  "rows": 43,
-  "last_utc": "2026-10-12 08:52",
+  "rows": 44,
+  "last_utc": "2026-10-13 02:48",
   "error": null
  },
  "cftc CME bitcoin TFF": {
@@ -101,5 +101,5 @@
   "last_utc": "2026-10-06 00:00",
   "error": null
  },
- "_run_utc": "2026-10-12 08:52"
+ "_run_utc": "2026-10-13 02:48"
 }
