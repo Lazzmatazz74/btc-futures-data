@@ -4,17 +4,17 @@
  "categories": {
   "skipped": "no CG_DEMO_KEY secret"
  },
- "rows_added": 6102,
+ "rows_added": 6130,
  "gap_days_filled": 0,
- "new_unfillable_gap_days": 1,
+ "new_unfillable_gap_days": 0,
  "known_gap_days": 6,
- "symbols_total": 904,
- "active": 740,
+ "symbols_total": 908,
+ "active": 744,
  "ended": 164,
  "old_coins": 80,
  "with_missing_days": 2,
  "missing_days_total": 6,
  "ended_with_zero_volume_tail": 154,
- "run_utc": "2026-10-12 04:05",
+ "run_utc": "2026-10-19 04:17",
  "ok": true
 }
