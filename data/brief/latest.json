@@ -1,5 +1,5 @@
 {
- "run_utc": "2026-10-21 03:03:13",
+ "run_utc": "2026-10-21 09:10:01",
  "data_end": "2026-10-20 00:00:00",
  "data_end_latest_coin": "2026-10-20 00:00:00",
  "previous_run_data_end": "2026-10-20 00:00:00",
@@ -8,20 +8,20 @@
   "data_end_utc": "2026-10-20 00:00:00",
   "download_ok": true,
   "download_problems": [],
-  "download_run_utc": "2026-10-21 02:17",
+  "download_run_utc": "2026-10-21 08:26",
   "lag_hours": {
-   "BTCUSDT-15m": 26.3,
-   "ETHUSDT-15m": 26.3,
-   "XRPUSDT-15m": 26.3,
-   "BNBUSDT-15m": 26.3,
-   "HYPEUSDT-15m": 26.3,
-   "LTCUSDT-15m": 26.3
+   "BTCUSDT-15m": 32.4,
+   "ETHUSDT-15m": 32.4,
+   "XRPUSDT-15m": 32.4,
+   "BNBUSDT-15m": 32.4,
+   "HYPEUSDT-15m": 32.4,
+   "LTCUSDT-15m": 32.4
   },
   "metrics_density_7d": {
-   "BTC": 0.117,
-   "ETH": 0.114,
-   "XRP": 0.111,
-   "BNB": 0.117
+   "BTC": 0.126,
+   "ETH": 0.122,
+   "XRP": 0.119,
+   "BNB": 0.125
   },
   "funding_settled_until": {
    "BTC": "2026-09-30 16:00:00.002000",
