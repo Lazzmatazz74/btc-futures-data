@@ -2,7 +2,7 @@
 
 Information only — no call. The flags have NOT passed their test (Workstream B: primary p = 0.92); they must never block a trade. Live verdict after 60 live signals.
 
-## BTC LONG — PW ACC — entry 2026-10-21 18:00 UTC (OPEN)
+## BTC LONG — PW ACC — entry 2026-10-21 18:00 UTC (closed 2026-10-22 01:45, -1.05R)
 
 | Entry | Stop | Target (3R) | Stop % | G3 | 200-DMA |
 |---|---|---|---|---|---|
