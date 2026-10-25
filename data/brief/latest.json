@@ -1,27 +1,27 @@
 {
- "run_utc": "2026-10-24 12:54:52",
+ "run_utc": "2026-10-25 07:48:01",
  "data_end": "2026-10-24 00:00:00",
  "data_end_latest_coin": "2026-10-24 00:00:00",
- "previous_run_data_end": "2026-10-23 00:00:00",
+ "previous_run_data_end": "2026-10-24 00:00:00",
  "unknown_gaps": [],
  "health": {
   "data_end_utc": "2026-10-24 00:00:00",
   "download_ok": true,
   "download_problems": [],
-  "download_run_utc": "2026-10-24 12:24",
+  "download_run_utc": "2026-10-25 07:03",
   "lag_hours": {
-   "BTCUSDT-15m": 12.4,
-   "ETHUSDT-15m": 12.4,
-   "XRPUSDT-15m": 12.4,
-   "BNBUSDT-15m": 12.4,
-   "HYPEUSDT-15m": 12.4,
-   "LTCUSDT-15m": 12.4
+   "BTCUSDT-15m": 31.1,
+   "ETHUSDT-15m": 31.1,
+   "XRPUSDT-15m": 31.1,
+   "BNBUSDT-15m": 31.1,
+   "HYPEUSDT-15m": 31.1,
+   "LTCUSDT-15m": 31.1
   },
   "metrics_density_7d": {
-   "BTC": 0.161,
-   "ETH": 0.143,
-   "XRP": 0.15,
-   "BNB": 0.157
+   "BTC": 0.187,
+   "ETH": 0.173,
+   "XRP": 0.177,
+   "BNB": 0.188
   },
   "funding_settled_until": {
    "BTC": "2026-09-30 16:00:00.002000",
@@ -65,7 +65,7 @@
    "day": "2026-10-23",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": -0.01071
+   "oi_chg_7d": -0.010899
   },
   "ETH": {
    "day": "2026-10-23",
