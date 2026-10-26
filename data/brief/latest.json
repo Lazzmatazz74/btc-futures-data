@@ -1,27 +1,27 @@
 {
- "run_utc": "2026-10-26 08:06:24",
- "data_end": "2026-10-25 00:00:00",
- "data_end_latest_coin": "2026-10-25 00:00:00",
+ "run_utc": "2026-10-26 15:26:58",
+ "data_end": "2026-10-26 00:00:00",
+ "data_end_latest_coin": "2026-10-26 00:00:00",
  "previous_run_data_end": "2026-10-25 00:00:00",
  "unknown_gaps": [],
  "health": {
-  "data_end_utc": "2026-10-25 00:00:00",
+  "data_end_utc": "2026-10-26 00:00:00",
   "download_ok": true,
   "download_problems": [],
-  "download_run_utc": "2026-10-26 07:11",
+  "download_run_utc": "2026-10-26 14:48",
   "lag_hours": {
-   "BTCUSDT-15m": 31.2,
-   "ETHUSDT-15m": 31.2,
-   "XRPUSDT-15m": 31.2,
-   "BNBUSDT-15m": 31.2,
-   "HYPEUSDT-15m": 31.2,
-   "LTCUSDT-15m": 31.2
+   "BTCUSDT-15m": 14.8,
+   "ETHUSDT-15m": 14.8,
+   "XRPUSDT-15m": 14.8,
+   "BNBUSDT-15m": 14.8,
+   "HYPEUSDT-15m": 14.8,
+   "LTCUSDT-15m": 14.8
   },
   "metrics_density_7d": {
-   "BTC": 0.156,
-   "ETH": 0.146,
-   "XRP": 0.135,
-   "BNB": 0.154
+   "BTC": 0.128,
+   "ETH": 0.113,
+   "XRP": 0.116,
+   "BNB": 0.123
   },
   "funding_settled_until": {
    "BTC": "2026-09-30 16:00:00.002000",
@@ -62,28 +62,28 @@
  "x3_open": [],
  "c3_status": {
   "BTC": {
-   "day": "2026-10-24",
+   "day": "2026-10-25",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": 0.009539
+   "oi_chg_7d": 0.005948
   },
   "ETH": {
-   "day": "2026-10-24",
-   "C3": false,
-   "quiet": false,
-   "oi_chg_7d": 0.002495
-  },
-  "XRP": {
-   "day": "2026-10-24",
-   "C3": false,
-   "quiet": false,
-   "oi_chg_7d": -0.001325
-  },
-  "BNB": {
-   "day": "2026-10-24",
+   "day": "2026-10-25",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": -0.026093
+   "oi_chg_7d": 0.014902
+  },
+  "XRP": {
+   "day": "2026-10-25",
+   "C3": false,
+   "quiet": false,
+   "oi_chg_7d": -0.054846
+  },
+  "BNB": {
+   "day": "2026-10-25",
+   "C3": false,
+   "quiet": true,
+   "oi_chg_7d": -0.015561
   }
  },
  "c3_record": "C3 on: 21.6% of days followed by a top-20% 7-day move vs 18.0% base (lift 1.20); no direction information (Workstream C). Information only.",
