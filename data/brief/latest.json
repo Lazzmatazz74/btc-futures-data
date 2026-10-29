@@ -1,21 +1,21 @@
 {
- "run_utc": "2026-10-28 15:24:02",
+ "run_utc": "2026-10-29 08:48:46",
  "data_end": "2026-10-28 00:00:00",
  "data_end_latest_coin": "2026-10-28 00:00:00",
- "previous_run_data_end": "2026-10-27 00:00:00",
+ "previous_run_data_end": "2026-10-28 00:00:00",
  "unknown_gaps": [],
  "health": {
   "data_end_utc": "2026-10-28 00:00:00",
   "download_ok": true,
   "download_problems": [],
-  "download_run_utc": "2026-10-28 14:47",
+  "download_run_utc": "2026-10-29 07:44",
   "lag_hours": {
-   "BTCUSDT-15m": 14.8,
-   "ETHUSDT-15m": 14.8,
-   "XRPUSDT-15m": 14.8,
-   "BNBUSDT-15m": 14.8,
-   "HYPEUSDT-15m": 14.8,
-   "LTCUSDT-15m": 14.8
+   "BTCUSDT-15m": 31.7,
+   "ETHUSDT-15m": 31.7,
+   "XRPUSDT-15m": 31.7,
+   "BNBUSDT-15m": 31.7,
+   "HYPEUSDT-15m": 31.7,
+   "LTCUSDT-15m": 31.7
   },
   "metrics_density_7d": {
    "BTC": 0.16,
@@ -79,14 +79,14 @@
    "sym": "XRP",
    "entry_time": "2026-10-27 16:00:00",
    "C3_at_entry": false,
-   "live": true,
+   "live": false,
    "status": "open"
   },
   {
    "sym": "XRP",
    "entry_time": "2026-10-28 00:00:00",
    "C3_at_entry": false,
-   "live": true,
+   "live": false,
    "status": "open"
   }
  ],
@@ -117,6 +117,6 @@
  },
  "new_rows": {
   "flag_log": 0,
-  "comp_log": 2
+  "comp_log": 0
  }
 }
