@@ -10,7 +10,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:55",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "BTCUSDT-15m": {
    "kind": "klines",
@@ -22,7 +22,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:45",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "BTCUSDT-1h": {
    "kind": "klines",
@@ -34,7 +34,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "BTCUSDT-1d": {
    "kind": "klines",
@@ -46,7 +46,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 00:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "BTCUSDT-funding": {
    "kind": "funding",
@@ -54,12 +54,12 @@
   },
   "BTCUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 16,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-10-29 23:55",
-   "lag_hours": 7.9
+   "lag_hours": 14.8
   },
   "ETHUSDT-5m": {
    "kind": "klines",
@@ -71,7 +71,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:55",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "ETHUSDT-15m": {
    "kind": "klines",
@@ -83,7 +83,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:45",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "ETHUSDT-1h": {
    "kind": "klines",
@@ -95,7 +95,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "ETHUSDT-1d": {
    "kind": "klines",
@@ -107,7 +107,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 00:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "ETHUSDT-funding": {
    "kind": "funding",
@@ -115,12 +115,12 @@
   },
   "ETHUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 19,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-10-29 23:55",
-   "lag_hours": 7.9
+   "lag_hours": 14.8
   },
   "XRPUSDT-5m": {
    "kind": "klines",
@@ -132,7 +132,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:55",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "XRPUSDT-15m": {
    "kind": "klines",
@@ -144,7 +144,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:45",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "XRPUSDT-1h": {
    "kind": "klines",
@@ -156,7 +156,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "XRPUSDT-1d": {
    "kind": "klines",
@@ -168,7 +168,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 00:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "XRPUSDT-funding": {
    "kind": "funding",
@@ -176,12 +176,12 @@
   },
   "XRPUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 21,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-10-29 23:55",
-   "lag_hours": 7.9
+   "lag_hours": 14.8
   },
   "BNBUSDT-5m": {
    "kind": "klines",
@@ -193,7 +193,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:55",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "BNBUSDT-15m": {
    "kind": "klines",
@@ -205,7 +205,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:45",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "BNBUSDT-1h": {
    "kind": "klines",
@@ -217,7 +217,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "BNBUSDT-1d": {
    "kind": "klines",
@@ -229,7 +229,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 00:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "BNBUSDT-funding": {
    "kind": "funding",
@@ -237,12 +237,12 @@
   },
   "BNBUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 20,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-10-29 23:55",
-   "lag_hours": 7.9
+   "lag_hours": 14.8
   },
   "HYPEUSDT-5m": {
    "kind": "klines",
@@ -254,7 +254,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:55",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "HYPEUSDT-15m": {
    "kind": "klines",
@@ -266,7 +266,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:45",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "HYPEUSDT-1h": {
    "kind": "klines",
@@ -278,7 +278,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "HYPEUSDT-1d": {
    "kind": "klines",
@@ -290,7 +290,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 00:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "HYPEUSDT-funding": {
    "kind": "funding",
@@ -298,12 +298,12 @@
   },
   "HYPEUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 15,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-10-29 23:55",
-   "lag_hours": 7.9
+   "lag_hours": 14.8
   },
   "LTCUSDT-5m": {
    "kind": "klines",
@@ -315,7 +315,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:55",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "LTCUSDT-15m": {
    "kind": "klines",
@@ -327,7 +327,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:45",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "LTCUSDT-1h": {
    "kind": "klines",
@@ -339,7 +339,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 23:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "LTCUSDT-1d": {
    "kind": "klines",
@@ -351,7 +351,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-10-27 00:00",
-   "lag_hours": 55.8
+   "lag_hours": 62.8
   },
   "LTCUSDT-funding": {
    "kind": "funding",
@@ -359,15 +359,40 @@
   },
   "LTCUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 22,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-10-29 23:55",
-   "lag_hours": 7.9
+   "lag_hours": 14.8
   }
  },
- "problems": [],
- "run_utc": "2026-10-30 07:50",
- "ok": true
+ "problems": [
+  "BTCUSDT-5m: last bar 2026-10-27 23:55 UTC is 62.8h old",
+  "BTCUSDT-15m: last bar 2026-10-27 23:45 UTC is 62.8h old",
+  "BTCUSDT-1h: last bar 2026-10-27 23:00 UTC is 62.8h old",
+  "BTCUSDT-1d: last bar 2026-10-27 00:00 UTC is 62.8h old",
+  "ETHUSDT-5m: last bar 2026-10-27 23:55 UTC is 62.8h old",
+  "ETHUSDT-15m: last bar 2026-10-27 23:45 UTC is 62.8h old",
+  "ETHUSDT-1h: last bar 2026-10-27 23:00 UTC is 62.8h old",
+  "ETHUSDT-1d: last bar 2026-10-27 00:00 UTC is 62.8h old",
+  "XRPUSDT-5m: last bar 2026-10-27 23:55 UTC is 62.8h old",
+  "XRPUSDT-15m: last bar 2026-10-27 23:45 UTC is 62.8h old",
+  "XRPUSDT-1h: last bar 2026-10-27 23:00 UTC is 62.8h old",
+  "XRPUSDT-1d: last bar 2026-10-27 00:00 UTC is 62.8h old",
+  "BNBUSDT-5m: last bar 2026-10-27 23:55 UTC is 62.8h old",
+  "BNBUSDT-15m: last bar 2026-10-27 23:45 UTC is 62.8h old",
+  "BNBUSDT-1h: last bar 2026-10-27 23:00 UTC is 62.8h old",
+  "BNBUSDT-1d: last bar 2026-10-27 00:00 UTC is 62.8h old",
+  "HYPEUSDT-5m: last bar 2026-10-27 23:55 UTC is 62.8h old",
+  "HYPEUSDT-15m: last bar 2026-10-27 23:45 UTC is 62.8h old",
+  "HYPEUSDT-1h: last bar 2026-10-27 23:00 UTC is 62.8h old",
+  "HYPEUSDT-1d: last bar 2026-10-27 00:00 UTC is 62.8h old",
+  "LTCUSDT-5m: last bar 2026-10-27 23:55 UTC is 62.8h old",
+  "LTCUSDT-15m: last bar 2026-10-27 23:45 UTC is 62.8h old",
+  "LTCUSDT-1h: last bar 2026-10-27 23:00 UTC is 62.8h old",
+  "LTCUSDT-1d: last bar 2026-10-27 00:00 UTC is 62.8h old"
+ ],
+ "run_utc": "2026-10-30 14:45",
+ "ok": false
 }
