@@ -1,5 +1,5 @@
 {
- "run_utc": "2026-10-31 14:44:21",
+ "run_utc": "2026-11-01 09:34:52",
  "data_end": "2026-10-28 00:00:00",
  "data_end_latest_coin": "2026-10-28 00:00:00",
  "previous_run_data_end": "2026-10-28 00:00:00",
@@ -8,59 +8,59 @@
   "data_end_utc": "2026-10-28 00:00:00",
   "download_ok": false,
   "download_problems": [
-   "BTCUSDT-5m: last bar 2026-10-27 23:55 UTC is 86.2h old",
-   "BTCUSDT-15m: last bar 2026-10-27 23:45 UTC is 86.2h old",
-   "BTCUSDT-1h: last bar 2026-10-27 23:00 UTC is 86.2h old",
-   "BTCUSDT-1d: last bar 2026-10-27 00:00 UTC is 86.2h old",
-   "ETHUSDT-5m: last bar 2026-10-27 23:55 UTC is 86.2h old",
-   "ETHUSDT-15m: last bar 2026-10-27 23:45 UTC is 86.2h old",
-   "ETHUSDT-1h: last bar 2026-10-27 23:00 UTC is 86.2h old",
-   "ETHUSDT-1d: last bar 2026-10-27 00:00 UTC is 86.2h old",
-   "XRPUSDT-5m: last bar 2026-10-27 23:55 UTC is 86.2h old",
-   "XRPUSDT-15m: last bar 2026-10-27 23:45 UTC is 86.2h old",
-   "XRPUSDT-1h: last bar 2026-10-27 23:00 UTC is 86.2h old",
-   "XRPUSDT-1d: last bar 2026-10-27 00:00 UTC is 86.2h old",
-   "BNBUSDT-5m: last bar 2026-10-27 23:55 UTC is 86.2h old",
-   "BNBUSDT-15m: last bar 2026-10-27 23:45 UTC is 86.2h old",
-   "BNBUSDT-1h: last bar 2026-10-27 23:00 UTC is 86.2h old",
-   "BNBUSDT-1d: last bar 2026-10-27 00:00 UTC is 86.2h old",
-   "HYPEUSDT-5m: last bar 2026-10-27 23:55 UTC is 86.2h old",
-   "HYPEUSDT-15m: last bar 2026-10-27 23:45 UTC is 86.2h old",
-   "HYPEUSDT-1h: last bar 2026-10-27 23:00 UTC is 86.2h old",
-   "HYPEUSDT-1d: last bar 2026-10-27 00:00 UTC is 86.2h old",
-   "LTCUSDT-5m: last bar 2026-10-27 23:55 UTC is 86.2h old",
-   "LTCUSDT-15m: last bar 2026-10-27 23:45 UTC is 86.2h old",
-   "LTCUSDT-1h: last bar 2026-10-27 23:00 UTC is 86.2h old",
-   "LTCUSDT-1d: last bar 2026-10-27 00:00 UTC is 86.2h old"
+   "BTCUSDT-5m: last bar 2026-10-27 23:55 UTC is 104.3h old",
+   "BTCUSDT-15m: last bar 2026-10-27 23:45 UTC is 104.3h old",
+   "BTCUSDT-1h: last bar 2026-10-27 23:00 UTC is 104.3h old",
+   "BTCUSDT-1d: last bar 2026-10-27 00:00 UTC is 104.3h old",
+   "ETHUSDT-5m: last bar 2026-10-27 23:55 UTC is 104.3h old",
+   "ETHUSDT-15m: last bar 2026-10-27 23:45 UTC is 104.3h old",
+   "ETHUSDT-1h: last bar 2026-10-27 23:00 UTC is 104.3h old",
+   "ETHUSDT-1d: last bar 2026-10-27 00:00 UTC is 104.3h old",
+   "XRPUSDT-5m: last bar 2026-10-27 23:55 UTC is 104.3h old",
+   "XRPUSDT-15m: last bar 2026-10-27 23:45 UTC is 104.3h old",
+   "XRPUSDT-1h: last bar 2026-10-27 23:00 UTC is 104.3h old",
+   "XRPUSDT-1d: last bar 2026-10-27 00:00 UTC is 104.3h old",
+   "BNBUSDT-5m: last bar 2026-10-27 23:55 UTC is 104.3h old",
+   "BNBUSDT-15m: last bar 2026-10-27 23:45 UTC is 104.3h old",
+   "BNBUSDT-1h: last bar 2026-10-27 23:00 UTC is 104.3h old",
+   "BNBUSDT-1d: last bar 2026-10-27 00:00 UTC is 104.3h old",
+   "HYPEUSDT-5m: last bar 2026-10-27 23:55 UTC is 104.3h old",
+   "HYPEUSDT-15m: last bar 2026-10-27 23:45 UTC is 104.3h old",
+   "HYPEUSDT-1h: last bar 2026-10-27 23:00 UTC is 104.3h old",
+   "HYPEUSDT-1d: last bar 2026-10-27 00:00 UTC is 104.3h old",
+   "LTCUSDT-5m: last bar 2026-10-27 23:55 UTC is 104.3h old",
+   "LTCUSDT-15m: last bar 2026-10-27 23:45 UTC is 104.3h old",
+   "LTCUSDT-1h: last bar 2026-10-27 23:00 UTC is 104.3h old",
+   "LTCUSDT-1d: last bar 2026-10-27 00:00 UTC is 104.3h old"
   ],
-  "download_run_utc": "2026-10-31 14:12",
+  "download_run_utc": "2026-11-01 08:17",
   "lag_hours": {
-   "BTCUSDT-15m": 86.2,
-   "ETHUSDT-15m": 86.2,
-   "XRPUSDT-15m": 86.2,
-   "BNBUSDT-15m": 86.2,
-   "HYPEUSDT-15m": 86.2,
-   "LTCUSDT-15m": 86.2
+   "BTCUSDT-15m": 104.3,
+   "ETHUSDT-15m": 104.3,
+   "XRPUSDT-15m": 104.3,
+   "BNBUSDT-15m": 104.3,
+   "HYPEUSDT-15m": 104.3,
+   "LTCUSDT-15m": 104.3
   },
   "metrics_density_7d": {
-   "BTC": 0.278,
-   "ETH": 0.273,
-   "XRP": 0.27,
-   "BNB": 0.278
+   "BTC": 0.293,
+   "ETH": 0.286,
+   "XRP": 0.281,
+   "BNB": 0.293
   },
   "funding_settled_until": {
-   "BTC": "2026-09-30 16:00:00.002000",
-   "ETH": "2026-09-30 16:00:00.002000",
+   "BTC": "2026-10-31 16:00:00",
+   "ETH": "2026-10-31 16:00:00",
    "XRP": "2026-09-30 16:00:00.002000",
-   "BNB": "2026-09-30 16:00:00.002000"
+   "BNB": "2026-10-31 16:00:00"
   }
  },
  "edge_gauge": {
   "n_closed": 1027,
   "last_exit": "2026-10-24 16:00:00",
-  "rolling30": 0.477987,
-  "rolling60": -0.060627,
-  "cusum": 26.430239,
+  "rolling30": 0.478029,
+  "rolling60": -0.060606,
+  "cusum": 26.428976,
   "cusum_limit": 19.632888,
   "thr30": -0.328644,
   "thr60": -0.226033,
@@ -120,7 +120,7 @@
    "target": 30,
    "n_live_closed": 9,
    "take_n": 5,
-   "take_mean": 0.253882,
+   "take_mean": 0.256206,
    "skip_n": 4,
    "skip_mean": -1.036048
   },
@@ -130,14 +130,14 @@
    "flagged_n": 4,
    "flagged_mean": -1.036048,
    "unflagged_n": 6,
-   "unflagged_mean": 0.037065
+   "unflagged_mean": 0.038518
   },
   "C3": {
    "target": 30,
    "n_live_closed_C3on": 0,
    "on_mean": null,
    "n_live_closed_C3off": 6,
-   "off_mean": -0.563681
+   "off_mean": -0.57067
   }
  },
  "new_rows": {
