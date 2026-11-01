@@ -1,0 +1,62 @@
+name: Fetch gold data rev1 (one-off, for the session IFVG test)
+
+# Downloads XAU/USD 1m bid + ask from Dukascopy (2016 -> today) with dukascopy-node, merges them to mid
+# prices, adds Binance XAUUSDT perp 1m (2026-01 ->) and writes a sanity report.
+# Output: data/gold/XAUUSD_1m_mid_<year>.csv.gz, data/gold/XAUUSDT_perp_1m.csv.gz, data/gold/gold_data_check.json
+# Script: gold_data_downloader_rev1.py (repo root). Spec: claude-work Trading/SESSION_IFVG_SPEC_rev2.md.
+# Manual run only: Actions -> "Fetch gold data rev1" -> Run workflow.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
+jobs:
+  gold:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install tools
+        run: |
+          pip install pandas
+          npm install -g dukascopy-node@1.51.1
+          dukascopy-node --install-browser || echo "browser install failed - continuing without WAF recovery"
+      - name: Dukascopy XAU/USD 1m bid + ask, one file per year
+        run: |
+          mkdir -p raw_gold
+          for Y in $(seq 2016 2026); do
+            TO="$((Y+1))-01-01"; [ "$Y" = "2026" ] && TO="now"
+            for P in bid ask; do
+              dukascopy-node -i xauusd -from "$Y-01-01" -to "$TO" -t m1 -p $P -f csv \
+                -dir raw_gold -fn ${P}_$Y -r 5 -rp 2000 -bs 10 -bp 500 -s || echo "FAILED $P $Y"
+            done
+          done
+          ls -la raw_gold
+      - name: Merge to mid, Binance perp, check
+        if: always()
+        run: |
+          python gold_data_downloader_rev1.py merge
+          python gold_data_downloader_rev1.py binance
+          python gold_data_downloader_rev1.py check
+      - name: Commit and push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/gold/ 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "Gold data rev1: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi
