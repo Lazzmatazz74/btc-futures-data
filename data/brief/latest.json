@@ -1,52 +1,109 @@
 {
- "run_utc": "2026-11-02 18:43:51",
- "data_end": "2026-10-28 00:00:00",
- "data_end_latest_coin": "2026-10-28 00:00:00",
+ "run_utc": "2026-11-03 09:53:12",
+ "data_end": "2026-11-03 00:00:00",
+ "data_end_latest_coin": "2026-11-03 00:00:00",
  "previous_run_data_end": "2026-10-28 00:00:00",
- "unknown_gaps": [],
+ "unknown_gaps": [
+  {
+   "sym": "BTCUSDT",
+   "tf": "15m",
+   "first_missing": "2026-10-28 00:00:00",
+   "last_missing": "2026-10-28 23:45:00",
+   "bars": 96
+  },
+  {
+   "sym": "BTCUSDT",
+   "tf": "1h",
+   "first_missing": "2026-10-28 00:00:00",
+   "last_missing": "2026-10-28 23:00:00",
+   "bars": 24
+  },
+  {
+   "sym": "ETHUSDT",
+   "tf": "15m",
+   "first_missing": "2026-10-28 00:00:00",
+   "last_missing": "2026-10-28 23:45:00",
+   "bars": 96
+  },
+  {
+   "sym": "ETHUSDT",
+   "tf": "1h",
+   "first_missing": "2026-10-28 00:00:00",
+   "last_missing": "2026-10-28 23:00:00",
+   "bars": 24
+  },
+  {
+   "sym": "XRPUSDT",
+   "tf": "15m",
+   "first_missing": "2026-10-28 00:00:00",
+   "last_missing": "2026-10-28 23:45:00",
+   "bars": 96
+  },
+  {
+   "sym": "XRPUSDT",
+   "tf": "1h",
+   "first_missing": "2026-10-28 00:00:00",
+   "last_missing": "2026-10-28 23:00:00",
+   "bars": 24
+  },
+  {
+   "sym": "BNBUSDT",
+   "tf": "15m",
+   "first_missing": "2026-10-28 00:00:00",
+   "last_missing": "2026-10-28 23:45:00",
+   "bars": 96
+  },
+  {
+   "sym": "BNBUSDT",
+   "tf": "1h",
+   "first_missing": "2026-10-28 00:00:00",
+   "last_missing": "2026-10-28 23:00:00",
+   "bars": 24
+  }
+ ],
  "health": {
-  "data_end_utc": "2026-10-28 00:00:00",
+  "data_end_utc": "2026-11-03 00:00:00",
   "download_ok": false,
   "download_problems": [
-   "BTCUSDT-5m: last bar 2026-10-27 23:55 UTC is 137.7h old",
-   "BTCUSDT-15m: last bar 2026-10-27 23:45 UTC is 137.7h old",
-   "BTCUSDT-1h: last bar 2026-10-27 23:00 UTC is 137.7h old",
-   "BTCUSDT-1d: last bar 2026-10-27 00:00 UTC is 137.7h old",
-   "ETHUSDT-5m: last bar 2026-10-27 23:55 UTC is 137.7h old",
-   "ETHUSDT-15m: last bar 2026-10-27 23:45 UTC is 137.7h old",
-   "ETHUSDT-1h: last bar 2026-10-27 23:00 UTC is 137.7h old",
-   "ETHUSDT-1d: last bar 2026-10-27 00:00 UTC is 137.7h old",
-   "XRPUSDT-5m: last bar 2026-10-27 23:55 UTC is 137.7h old",
-   "XRPUSDT-15m: last bar 2026-10-27 23:45 UTC is 137.7h old",
-   "XRPUSDT-1h: last bar 2026-10-27 23:00 UTC is 137.7h old",
-   "XRPUSDT-1d: last bar 2026-10-27 00:00 UTC is 137.7h old",
-   "BNBUSDT-5m: last bar 2026-10-27 23:55 UTC is 137.7h old",
-   "BNBUSDT-15m: last bar 2026-10-27 23:45 UTC is 137.7h old",
-   "BNBUSDT-1h: last bar 2026-10-27 23:00 UTC is 137.7h old",
-   "BNBUSDT-1d: last bar 2026-10-27 00:00 UTC is 137.7h old",
-   "HYPEUSDT-5m: last bar 2026-10-27 23:55 UTC is 137.7h old",
-   "HYPEUSDT-15m: last bar 2026-10-27 23:45 UTC is 137.7h old",
-   "HYPEUSDT-1h: last bar 2026-10-27 23:00 UTC is 137.7h old",
-   "HYPEUSDT-1d: last bar 2026-10-27 00:00 UTC is 137.7h old",
-   "LTCUSDT-5m: last bar 2026-10-27 23:55 UTC is 137.7h old",
-   "LTCUSDT-15m: last bar 2026-10-27 23:45 UTC is 137.7h old",
-   "LTCUSDT-1h: last bar 2026-10-27 23:00 UTC is 137.7h old",
-   "LTCUSDT-1d: last bar 2026-10-27 00:00 UTC is 137.7h old"
+   "BTCUSDT-5m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:55 (288 bars)']",
+   "BTCUSDT-15m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:45 (96 bars)']",
+   "BTCUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
+   "BTCUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']",
+   "ETHUSDT-5m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:55 (288 bars)']",
+   "ETHUSDT-15m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:45 (96 bars)']",
+   "ETHUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
+   "ETHUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']",
+   "XRPUSDT-5m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:55 (288 bars)']",
+   "XRPUSDT-15m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:45 (96 bars)']",
+   "XRPUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
+   "XRPUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']",
+   "BNBUSDT-5m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:55 (288 bars)']",
+   "BNBUSDT-15m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:45 (96 bars)']",
+   "BNBUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
+   "BNBUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']",
+   "HYPEUSDT-5m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:55 (288 bars)']",
+   "HYPEUSDT-15m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:45 (96 bars)']",
+   "HYPEUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
+   "HYPEUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']",
+   "LTCUSDT-5m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:55 (288 bars)']",
+   "LTCUSDT-15m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:45 (96 bars)']",
+   "LTCUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
+   "LTCUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']"
   ],
-  "download_run_utc": "2026-11-02 17:42",
+  "download_run_utc": "2026-11-03 08:44",
   "lag_hours": {
-   "BTCUSDT-15m": 137.7,
-   "ETHUSDT-15m": 137.7,
-   "XRPUSDT-15m": 137.7,
-   "BNBUSDT-15m": 137.7,
-   "HYPEUSDT-15m": 137.7,
-   "LTCUSDT-15m": 137.7
+   "BTCUSDT-15m": 8.7,
+   "ETHUSDT-15m": 8.7,
+   "XRPUSDT-15m": 8.7,
+   "BNBUSDT-15m": 8.7,
+   "HYPEUSDT-15m": 8.7,
+   "LTCUSDT-15m": 8.7
   },
   "metrics_density_7d": {
-   "BTC": 0.302,
-   "ETH": 0.296,
-   "XRP": 0.289,
-   "BNB": 0.306
+   "BTC": 0.191,
+   "ETH": 0.199,
+   "XRP": 0.189,
+   "BNB": 0.197
   },
   "funding_settled_until": {
    "BTC": "2026-10-31 16:00:00",
@@ -71,64 +128,74 @@
   "note": "GAUGE ONLY - every historical alarm was a false alarm (edge_health_rev1); never a stop signal"
  },
  "x3_new_signals": [],
- "x3_open": [],
+ "x3_open": [
+  {
+   "sym": "BNB",
+   "side": "short",
+   "entry_time": "2026-10-30 00:00:00",
+   "entry": 697.96,
+   "stop": 745.53,
+   "mark_R_F063": -0.045622
+  },
+  {
+   "sym": "BTC",
+   "side": "short",
+   "entry_time": "2026-10-30 00:00:00",
+   "entry": 77962.6,
+   "stop": 80814.8,
+   "mark_R_F063": 0.405685
+  },
+  {
+   "sym": "ETH",
+   "side": "short",
+   "entry_time": "2026-10-30 00:00:00",
+   "entry": 2252.34,
+   "stop": 2335.92,
+   "mark_R_F063": -0.031984
+  }
+ ],
  "c3_status": {
   "BTC": {
-   "day": "2026-10-27",
-   "C3": false,
+   "day": "2026-11-02",
+   "C3": true,
    "quiet": true,
-   "oi_chg_7d": 0.000207
+   "oi_chg_7d": 0.056926
   },
   "ETH": {
-   "day": "2026-10-27",
+   "day": "2026-11-02",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": 0.024763
+   "oi_chg_7d": 0.014791
   },
   "XRP": {
-   "day": "2026-10-27",
-   "C3": false,
+   "day": "2026-11-02",
+   "C3": true,
    "quiet": true,
-   "oi_chg_7d": -0.006967
+   "oi_chg_7d": 0.047079
   },
   "BNB": {
-   "day": "2026-10-27",
-   "C3": false,
+   "day": "2026-11-02",
+   "C3": true,
    "quiet": true,
-   "oi_chg_7d": 0.01518
+   "oi_chg_7d": 0.054151
   }
  },
  "c3_record": "C3 on: 21.6% of days followed by a top-20% 7-day move vs 18.0% base (lift 1.20); no direction information (Workstream C). Information only.",
- "comp_new_signals": [
-  {
-   "sym": "XRP",
-   "entry_time": "2026-10-27 16:00:00",
-   "C3_at_entry": false,
-   "live": false,
-   "status": "open"
-  },
-  {
-   "sym": "XRP",
-   "entry_time": "2026-10-28 00:00:00",
-   "C3_at_entry": false,
-   "live": false,
-   "status": "open"
-  }
- ],
+ "comp_new_signals": [],
  "scoreboards": {
   "G3": {
    "target": 30,
-   "n_live_closed": 9,
+   "n_live_closed": 10,
    "take_n": 5,
    "take_mean": 0.255588,
-   "skip_n": 4,
-   "skip_mean": -1.036048
+   "skip_n": 5,
+   "skip_mean": -1.032568
   },
   "FLAGS": {
    "target": 60,
-   "n_live_closed": 10,
-   "flagged_n": 4,
-   "flagged_mean": -1.036048,
+   "n_live_closed": 11,
+   "flagged_n": 5,
+   "flagged_mean": -1.032568,
    "unflagged_n": 6,
    "unflagged_mean": 0.038003
   },
@@ -136,12 +203,12 @@
    "target": 30,
    "n_live_closed_C3on": 0,
    "on_mean": null,
-   "n_live_closed_C3off": 6,
-   "off_mean": -0.571849
+   "n_live_closed_C3off": 9,
+   "off_mean": -0.661935
   }
  },
  "new_rows": {
-  "flag_log": 0,
-  "comp_log": 0
+  "flag_log": 4,
+  "comp_log": 2
  }
 }
