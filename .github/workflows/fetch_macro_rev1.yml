@@ -1,0 +1,71 @@
+name: Fetch macro data rev1 (stocks, gold, oil, dollar, yen, VIX, yields, ETF flows)
+
+# History for the macro watch Part B test (claude-work Trading/MACRO_WATCH_SPEC_rev3.md).
+# Dukascopy 1h bid + ask 2020 -> now (S&P 500, Nasdaq 100, gold, WTI, Brent, USD/JPY, dollar index) -> mid;
+# Yahoo daily 2019 -> now + hourly (730 days); Farside daily BTC ETF flows; then a check report.
+# Writes only data/macro/. Script: macro_data_downloader_rev1.py (repo root). Manual run only.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: data-push
+  cancel-in-progress: false
+
+jobs:
+  macro:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            macro_data_downloader_rev1.py
+            data/macro/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install tools
+        run: |
+          pip install pandas numpy lxml
+          npm install -g dukascopy-node@1.51.1
+
+      - name: Dukascopy 1h bid + ask, one file per instrument per year
+        run: |
+          mkdir -p raw_macro
+          for I in usa500idxusd usatechidxusd xauusd lightcmdusd brentcmdusd usdjpy dollaridxusd; do
+            for Y in $(seq 2020 2026); do
+              TO="$((Y+1))-01-01"; [ "$Y" = "2026" ] && TO="now"
+              for P in bid ask; do
+                dukascopy-node -i $I -from "$Y-01-01" -to "$TO" -t h1 -p $P -f csv \
+                  -dir raw_macro -fn ${I}_${P}_$Y -r 5 -rp 2000 -s || echo "FAILED $I $P $Y"
+              done
+            done
+          done
+          ls -la raw_macro | head -120
+
+      - name: Merge Dukascopy, Yahoo, ETF flows, check
+        if: always()
+        run: |
+          python macro_data_downloader_rev1.py duka  || echo "duka step failed"
+          python macro_data_downloader_rev1.py yahoo || echo "yahoo step failed"
+          python macro_data_downloader_rev1.py flows || echo "flows step failed"
+          python macro_data_downloader_rev1.py check
+
+      - name: Commit and push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/macro/ 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "Macro data rev1: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main || { sleep 15; git pull --rebase origin main; }
+            git push || { sleep 15; git pull --rebase origin main && git push; }
+          fi
