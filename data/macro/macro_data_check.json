@@ -1,0 +1,274 @@
+{
+ "run_utc": "2026-11-03 17:17",
+ "files": {
+  "duka_brent_1h.csv.gz": {
+   "rows": 58841,
+   "first": "2020-01-01 00:00",
+   "last": "2026-11-03 16:00",
+   "max_gap_h": 76.0,
+   "last_close": 103.519
+  },
+  "duka_dxy_1h.csv.gz": {
+   "rows": 58848,
+   "first": "2020-01-01 00:00",
+   "last": "2026-11-03 16:00",
+   "max_gap_h": 76.0,
+   "last_close": 101.693
+  },
+  "duka_gold_1h.csv.gz": {
+   "rows": 59559,
+   "first": "2020-01-01 00:00",
+   "last": "2026-11-03 15:00",
+   "max_gap_h": 51.0,
+   "last_close": 3936.3705
+  },
+  "duka_nasdaq100_1h.csv.gz": {
+   "rows": 59559,
+   "first": "2020-01-01 00:00",
+   "last": "2026-11-03 16:00",
+   "max_gap_h": 51.0,
+   "last_close": 28230.928
+  },
+  "duka_sp500_1h.csv.gz": {
+   "rows": 59559,
+   "first": "2020-01-01 00:00",
+   "last": "2026-11-03 16:00",
+   "max_gap_h": 51.0,
+   "last_close": 7577.5415
+  },
+  "duka_usdjpy_1h.csv.gz": {
+   "rows": 59562,
+   "first": "2020-01-01 00:00",
+   "last": "2026-11-03 16:00",
+   "max_gap_h": 51.0,
+   "last_close": 158.508
+  },
+  "duka_wti_1h.csv.gz": {
+   "rows": 59560,
+   "first": "2020-01-01 00:00",
+   "last": "2026-11-03 16:00",
+   "max_gap_h": 51.0,
+   "last_close": 95.989
+  },
+  "etf_flows_daily.csv": {
+   "rows": 722,
+   "first": "2024-01-11",
+   "last": "2026-11-03",
+   "columns": 14,
+   "total_col": true,
+   "total_last5": [
+    137.3,
+    17.2,
+    -643.2,
+    -398.6,
+    0.0
+   ]
+  },
+  "yahoo_btcusd_1d.csv": {
+   "rows": 2864,
+   "first": "2019-01-01 00:00",
+   "last": "2026-11-03 00:00",
+   "max_gap_h": 24.0,
+   "last_close": 77566.3671875
+  },
+  "yahoo_coin_1d.csv": {
+   "rows": 1397,
+   "first": "2021-04-14 13:30",
+   "last": "2026-11-03 14:30",
+   "max_gap_h": 96.0,
+   "last_close": 148.66000366210938
+  },
+  "yahoo_coin_1h.csv": {
+   "rows": 5080,
+   "first": "2023-12-06 14:30",
+   "last": "2026-11-03 17:17",
+   "max_gap_h": 92.5,
+   "last_close": 148.68499755859375
+  },
+  "yahoo_dxy_1d.csv": {
+   "rows": 1973,
+   "first": "2019-01-02 05:00",
+   "last": "2026-11-03 05:00",
+   "max_gap_h": 96.0,
+   "last_close": 101.8280029296875
+  },
+  "yahoo_dxy_1h.csv": {
+   "rows": 14291,
+   "first": "2024-06-12 04:00",
+   "last": "2026-11-03 17:07",
+   "max_gap_h": 75.0,
+   "last_close": 101.822998046875
+  },
+  "yahoo_es_fut_1d.csv": {
+   "rows": 1974,
+   "first": "2019-01-02 05:00",
+   "last": "2026-11-03 05:00",
+   "max_gap_h": 96.0,
+   "last_close": 7602.5
+  },
+  "yahoo_es_fut_1h.csv": {
+   "rows": 13699,
+   "first": "2024-06-12 04:00",
+   "last": "2026-11-03 17:07",
+   "max_gap_h": 80.0,
+   "last_close": 7603.75
+  },
+  "yahoo_gold_1d.csv": {
+   "rows": 1974,
+   "first": "2019-01-02 05:00",
+   "last": "2026-11-03 05:00",
+   "max_gap_h": 96.0,
+   "last_close": 3939.300048828125
+  },
+  "yahoo_gold_1h.csv": {
+   "rows": 13734,
+   "first": "2024-06-12 04:00",
+   "last": "2026-11-03 17:07",
+   "max_gap_h": 80.0,
+   "last_close": 3939.60009765625
+  },
+  "yahoo_hyg_1d.csv": {
+   "rows": 1971,
+   "first": "2019-01-02 14:30",
+   "last": "2026-11-03 14:30",
+   "max_gap_h": 96.0,
+   "last_close": 76.93000030517578
+  },
+  "yahoo_ibit_1d.csv": {
+   "rows": 706,
+   "first": "2024-01-11 14:30",
+   "last": "2026-11-03 14:30",
+   "max_gap_h": 96.0,
+   "last_close": 43.904998779296875
+  },
+  "yahoo_mstr_1d.csv": {
+   "rows": 1971,
+   "first": "2019-01-02 14:30",
+   "last": "2026-11-03 14:30",
+   "max_gap_h": 96.0,
+   "last_close": 136.19000244140625
+  },
+  "yahoo_mstr_1h.csv": {
+   "rows": 5080,
+   "first": "2023-12-06 14:30",
+   "last": "2026-11-03 17:17",
+   "max_gap_h": 92.5,
+   "last_close": 136.16000366210938
+  },
+  "yahoo_nasdaq100_1d.csv": {
+   "rows": 1971,
+   "first": "2019-01-02 14:30",
+   "last": "2026-11-03 14:30",
+   "max_gap_h": 96.0,
+   "last_close": 28235.994140625
+  },
+  "yahoo_nq_fut_1d.csv": {
+   "rows": 1974,
+   "first": "2019-01-02 05:00",
+   "last": "2026-11-03 05:00",
+   "max_gap_h": 96.0,
+   "last_close": 28368.5
+  },
+  "yahoo_nq_fut_1h.csv": {
+   "rows": 13694,
+   "first": "2024-06-12 04:00",
+   "last": "2026-11-03 17:07",
+   "max_gap_h": 80.0,
+   "last_close": 28367.25
+  },
+  "yahoo_sp500_1d.csv": {
+   "rows": 1971,
+   "first": "2019-01-02 14:30",
+   "last": "2026-11-03 14:30",
+   "max_gap_h": 96.0,
+   "last_close": 7575.43017578125
+  },
+  "yahoo_us10y_1d.csv": {
+   "rows": 1971,
+   "first": "2019-01-02 13:20",
+   "last": "2026-11-03 13:20",
+   "max_gap_h": 96.0,
+   "last_close": 4.958000183105469
+  },
+  "yahoo_usdjpy_1d.csv": {
+   "rows": 2040,
+   "first": "2019-01-01 00:00",
+   "last": "2026-11-03 00:00",
+   "max_gap_h": 120.0,
+   "last_close": 158.5030059814453
+  },
+  "yahoo_usdjpy_1h.csv": {
+   "rows": 17163,
+   "first": "2024-01-17 00:00",
+   "last": "2026-11-03 17:17",
+   "max_gap_h": 77.0,
+   "last_close": 158.5
+  },
+  "yahoo_vix_1d.csv": {
+   "rows": 1973,
+   "first": "2019-01-02 08:00",
+   "last": "2026-11-03 08:00",
+   "max_gap_h": 96.0,
+   "last_close": 20.780000686645508
+  },
+  "yahoo_vix_1h.csv": {
+   "rows": 9971,
+   "first": "2024-01-17 09:00",
+   "last": "2026-11-03 17:02",
+   "max_gap_h": 83.0,
+   "last_close": 20.780000686645508
+  },
+  "yahoo_wti_1d.csv": {
+   "rows": 1973,
+   "first": "2019-01-02 05:00",
+   "last": "2026-11-03 05:00",
+   "max_gap_h": 96.0,
+   "last_close": 95.58000183105469
+  },
+  "yahoo_wti_1h.csv": {
+   "rows": 13559,
+   "first": "2024-06-12 04:00",
+   "last": "2026-11-03 17:07",
+   "max_gap_h": 80.0,
+   "last_close": 95.61000061035156
+  }
+ },
+ "pairs": {
+  "sp500": {
+   "hours": 13672,
+   "median_gap_pct": 0.449,
+   "p99_gap_pct": 1.09,
+   "hourly_return_corr": 0.958
+  },
+  "nasdaq100": {
+   "hours": 13667,
+   "median_gap_pct": 0.519,
+   "p99_gap_pct": 1.222,
+   "hourly_return_corr": 0.962
+  },
+  "gold": {
+   "hours": 13707,
+   "median_gap_pct": 0.481,
+   "p99_gap_pct": 1.803,
+   "hourly_return_corr": 0.977
+  },
+  "wti": {
+   "hours": 13533,
+   "median_gap_pct": 0.008,
+   "p99_gap_pct": 2.034,
+   "hourly_return_corr": 0.975
+  },
+  "dxy": {
+   "hours": 14215,
+   "median_gap_pct": 0.174,
+   "p99_gap_pct": 0.427,
+   "hourly_return_corr": 0.89
+  },
+  "usdjpy": {
+   "hours": 17156,
+   "median_gap_pct": 0.003,
+   "p99_gap_pct": 0.034,
+   "hourly_return_corr": 0.994
+  }
+ }
+}
