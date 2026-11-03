@@ -1,0 +1,45 @@
+name: Macro source test rev1 (manual, one-time, writes nothing)
+
+# Which outside-market data sources (stocks, gold, oil, dollar, yields, VIX, yen, ETF flows, crypto stocks,
+# junk-bond spread) a GitHub runner can reach. Spec: claude-work Trading/MACRO_WATCH_SPEC_rev2.md.
+# Read-only token, no commit. Results go to the log and to job annotations. Disable after the test.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            macro_source_test_rev1.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Web sources (Yahoo, Stooq, FRED, Farside, Hyperliquid HIP-3)
+        if: always()
+        run: python macro_source_test_rev1.py web
+
+      - name: Dukascopy instruments (last week + a 2017 week, 1h bars)
+        if: always()
+        run: |
+          npm install -g dukascopy-node@1.51.1
+          mkdir -p duka_test
+          for I in usa500idxusd usatechidxusd lightcmdusd brentcmdusd dollaridxusd usdjpy xauusd ustbondtrusd vixidxusd; do
+            dukascopy-node -i $I -from 2026-10-26 -to 2026-11-02 -t h1 -f csv -dir duka_test -fn ${I}_recent -r 3 -rp 2000 -s \
+              > duka_test/${I}_recent.log 2>&1 || echo "FAILED $I recent" >> duka_test/${I}_recent.log
+            dukascopy-node -i $I -from 2017-01-02 -to 2017-01-07 -t h1 -f csv -dir duka_test -fn ${I}_2017 -r 3 -rp 2000 -s \
+              > duka_test/${I}_2017.log 2>&1 || echo "FAILED $I 2017" >> duka_test/${I}_2017.log
+          done
+          ls -la duka_test
+          python macro_source_test_rev1.py duka
