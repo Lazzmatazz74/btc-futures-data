@@ -1,7 +1,7 @@
 {
- "run_utc": "2026-11-03 16:31:27",
- "data_end": "2026-11-03 00:00:00",
- "data_end_latest_coin": "2026-11-03 00:00:00",
+ "run_utc": "2026-11-04 09:43:19",
+ "data_end": "2026-11-04 00:00:00",
+ "data_end_latest_coin": "2026-11-04 00:00:00",
  "previous_run_data_end": "2026-11-03 00:00:00",
  "unknown_gaps": [
   {
@@ -62,7 +62,7 @@
   }
  ],
  "health": {
-  "data_end_utc": "2026-11-03 00:00:00",
+  "data_end_utc": "2026-11-04 00:00:00",
   "download_ok": false,
   "download_problems": [
    "BTCUSDT-5m: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:55 (288 bars)']",
@@ -90,20 +90,20 @@
    "LTCUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
    "LTCUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']"
   ],
-  "download_run_utc": "2026-11-03 15:45",
+  "download_run_utc": "2026-11-04 08:13",
   "lag_hours": {
-   "BTCUSDT-15m": 15.8,
-   "ETHUSDT-15m": 15.8,
-   "XRPUSDT-15m": 15.8,
-   "BNBUSDT-15m": 15.8,
-   "HYPEUSDT-15m": 15.8,
-   "LTCUSDT-15m": 15.8
+   "BTCUSDT-15m": 8.2,
+   "ETHUSDT-15m": 8.2,
+   "XRPUSDT-15m": 8.2,
+   "BNBUSDT-15m": 8.2,
+   "HYPEUSDT-15m": 8.2,
+   "LTCUSDT-15m": 8.2
   },
   "metrics_density_7d": {
-   "BTC": 0.191,
-   "ETH": 0.199,
-   "XRP": 0.189,
-   "BNB": 0.197
+   "BTC": 0.159,
+   "ETH": 0.164,
+   "XRP": 0.155,
+   "BNB": 0.165
   },
   "funding_settled_until": {
    "BTC": "2026-10-31 16:00:00",
@@ -135,7 +135,7 @@
    "entry_time": "2026-10-30 00:00:00",
    "entry": 697.96,
    "stop": 745.53,
-   "mark_R_F063": -0.045622
+   "mark_R_F063": -0.025646
   },
   {
    "sym": "BTC",
@@ -143,7 +143,7 @@
    "entry_time": "2026-10-30 00:00:00",
    "entry": 77962.6,
    "stop": 80814.8,
-   "mark_R_F063": 0.405685
+   "mark_R_F063": 0.177579
   },
   {
    "sym": "ETH",
@@ -151,37 +151,45 @@
    "entry_time": "2026-10-30 00:00:00",
    "entry": 2252.34,
    "stop": 2335.92,
-   "mark_R_F063": -0.031984
+   "mark_R_F063": -0.283917
   }
  ],
  "c3_status": {
   "BTC": {
-   "day": "2026-11-02",
+   "day": "2026-11-03",
    "C3": true,
    "quiet": true,
-   "oi_chg_7d": 0.056926
+   "oi_chg_7d": 0.032875
   },
   "ETH": {
-   "day": "2026-11-02",
+   "day": "2026-11-03",
    "C3": false,
    "quiet": true,
-   "oi_chg_7d": 0.014791
+   "oi_chg_7d": 0.009189
   },
   "XRP": {
-   "day": "2026-11-02",
+   "day": "2026-11-03",
    "C3": true,
    "quiet": true,
-   "oi_chg_7d": 0.047079
+   "oi_chg_7d": 0.0998
   },
   "BNB": {
-   "day": "2026-11-02",
-   "C3": true,
+   "day": "2026-11-03",
+   "C3": false,
    "quiet": true,
-   "oi_chg_7d": 0.054151
+   "oi_chg_7d": 0.017585
   }
  },
  "c3_record": "C3 on: 21.6% of days followed by a top-20% 7-day move vs 18.0% base (lift 1.20); no direction information (Workstream C). Information only.",
- "comp_new_signals": [],
+ "comp_new_signals": [
+  {
+   "sym": "XRP",
+   "entry_time": "2026-11-03 16:00:00",
+   "C3_at_entry": true,
+   "live": true,
+   "status": "open"
+  }
+ ],
  "scoreboards": {
   "G3": {
    "target": 30,
@@ -209,6 +217,6 @@
  },
  "new_rows": {
   "flag_log": 0,
-  "comp_log": 0
+  "comp_log": 1
  }
 }
