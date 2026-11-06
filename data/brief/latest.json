@@ -1,8 +1,8 @@
 {
- "run_utc": "2026-11-06 09:43:09",
+ "run_utc": "2026-11-06 16:10:15",
  "data_end": "2026-11-06 00:00:00",
  "data_end_latest_coin": "2026-11-06 00:00:00",
- "previous_run_data_end": "2026-11-05 00:00:00",
+ "previous_run_data_end": "2026-11-06 00:00:00",
  "unknown_gaps": [
   {
    "sym": "BTCUSDT",
@@ -90,14 +90,14 @@
    "LTCUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
    "LTCUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']"
   ],
-  "download_run_utc": "2026-11-06 08:40",
+  "download_run_utc": "2026-11-06 15:34",
   "lag_hours": {
-   "BTCUSDT-15m": 8.7,
-   "ETHUSDT-15m": 8.7,
-   "XRPUSDT-15m": 8.7,
-   "BNBUSDT-15m": 8.7,
-   "HYPEUSDT-15m": 8.7,
-   "LTCUSDT-15m": 8.7
+   "BTCUSDT-15m": 15.6,
+   "ETHUSDT-15m": 15.6,
+   "XRPUSDT-15m": 15.6,
+   "BNBUSDT-15m": 15.6,
+   "HYPEUSDT-15m": 15.6,
+   "LTCUSDT-15m": 15.6
   },
   "metrics_density_7d": {
    "BTC": 0.112,
