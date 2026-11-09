@@ -1,8 +1,8 @@
-# X3 signal dossiers — data to 2026-11-08 00:00 UTC
+# X3 signal dossiers — data to 2026-11-09 00:00 UTC
 
 Information only — no call. The flags have NOT passed their test (Workstream B: primary p = 0.92); they must never block a trade. Live verdict after 60 live signals.
 
-## XRP SHORT — PW ACC — entry 2026-11-06 09:00 UTC (OPEN)
+## XRP SHORT — PW ACC — entry 2026-11-06 09:00 UTC (closed 2026-11-08 22:00, +2.96R)
 
 | Entry | Stop | Target (3R) | Stop % | G3 | 200-DMA |
 |---|---|---|---|---|---|
