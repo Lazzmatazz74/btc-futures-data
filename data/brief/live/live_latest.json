@@ -1,22 +1,22 @@
 {
- "run_utc": "2026-11-11 06:09:55",
+ "run_utc": "2026-11-12 07:06:31",
  "script": "live_snapshot_rev5.py",
  "hl_baseline_funding_ann_pct": 10.95,
  "note": "Information only - no forecast, no trade call.",
  "coins": {
   "BTC": {
-   "price": 73869.12,
+   "price": 73587.24,
    "price_src": "spot",
-   "archive_end_utc": "2026-11-09 23:00",
+   "archive_end_utc": "2026-11-10 23:00",
    "live_source": "spot",
-   "live_bars": 30,
-   "last_closed_bar_utc": "2026-11-11 05:00",
+   "live_bars": 31,
+   "last_closed_bar_utc": "2026-11-12 06:00",
    "levels": [
     {
      "name": "PMH",
      "kind": "month",
      "price": 87249.6,
-     "dist_pct": 18.114,
+     "dist_pct": 18.566,
      "state": "untouched",
      "src": "perp"
     },
@@ -24,7 +24,7 @@
      "name": "PWH",
      "kind": "week",
      "price": 81188.0,
-     "dist_pct": 9.908,
+     "dist_pct": 10.329,
      "state": "untouched",
      "src": "perp"
     },
@@ -32,7 +32,7 @@
      "name": "MO",
      "kind": "month",
      "price": 77522.6,
-     "dist_pct": 4.946,
+     "dist_pct": 5.348,
      "state": null,
      "src": "perp"
     },
@@ -40,7 +40,7 @@
      "name": "PWM",
      "kind": "week",
      "price": 77260.5,
-     "dist_pct": 4.591,
+     "dist_pct": 4.992,
      "state": null,
      "src": "perp"
     },
@@ -48,7 +48,7 @@
      "name": "PML",
      "kind": "month",
      "price": 76270.0,
-     "dist_pct": 3.25,
+     "dist_pct": 3.646,
      "state": "accepted below",
      "src": "perp"
     },
@@ -56,7 +56,7 @@
      "name": "WKH",
      "kind": "week",
      "price": 76210.4,
-     "dist_pct": 3.169,
+     "dist_pct": 3.565,
      "state": "untouched",
      "src": "perp"
     },
@@ -64,31 +64,31 @@
      "name": "MONH",
      "kind": "week",
      "price": 75575.0,
-     "dist_pct": 2.309,
+     "dist_pct": 2.701,
      "state": "untouched",
      "src": "perp"
-    },
-    {
-     "name": "PDH",
-     "kind": "day",
-     "price": 75442.01,
-     "dist_pct": 2.129,
-     "state": "untouched",
-     "src": "spot"
     },
     {
      "name": "WO",
      "kind": "week",
      "price": 74823.4,
-     "dist_pct": 1.292,
+     "dist_pct": 1.68,
      "state": null,
      "src": "perp"
     },
     {
+     "name": "PDH",
+     "kind": "day",
+     "price": 74811.45,
+     "dist_pct": 1.664,
+     "state": "untouched",
+     "src": "spot"
+    },
+    {
      "name": "DO",
      "kind": "day",
-     "price": 73796.06,
-     "dist_pct": -0.099,
+     "price": 74015.2,
+     "dist_pct": 0.582,
      "state": null,
      "src": "spot"
     },
@@ -96,7 +96,7 @@
      "name": "MONL",
      "kind": "week",
      "price": 73715.1,
-     "dist_pct": -0.209,
+     "dist_pct": 0.174,
      "state": "accepted below",
      "src": "perp"
     },
@@ -104,7 +104,7 @@
      "name": "PWL",
      "kind": "week",
      "price": 73333.0,
-     "dist_pct": -0.726,
+     "dist_pct": -0.345,
      "state": "swept, back inside",
      "src": "perp"
     },
@@ -112,72 +112,72 @@
      "name": "WKL",
      "kind": "week",
      "price": 73333.0,
-     "dist_pct": -0.726,
+     "dist_pct": -0.345,
      "state": "swept, back inside",
      "src": "perp"
     },
     {
      "name": "PDL",
      "kind": "day",
-     "price": 72727.27,
-     "dist_pct": -1.546,
+     "price": 73209.12,
+     "dist_pct": -0.514,
      "state": "untouched",
      "src": "spot"
     }
    ],
    "nearest_above": [
-    "WO",
-    "PDH",
-    "MONH"
+    "MONL",
+    "DO",
+    "PDH"
    ],
    "nearest_below": [
-    "DO",
-    "MONL",
-    "PWL"
+    "PWL",
+    "WKL",
+    "PDL"
    ],
    "yesterday_daily_levels": [
     {
      "name": "PDH",
-     "price": 75575.0,
+     "price": 75411.0,
      "state": "untouched",
      "src": "perp"
     },
     {
      "name": "PDL",
-     "price": 73715.1,
-     "state": "accepted below",
+     "price": 72691.0,
+     "state": "untouched",
      "src": "perp"
     }
    ],
    "vol": {
-    "yesterday_utc": "2026-11-10",
+    "yesterday_utc": "2026-11-11",
     "yesterday_src": "spot",
-    "yesterday_range_pct": 3.602,
-    "avg20_range_pct": 2.959,
-    "atr14_pct": 3.366,
-    "yesterday_pctile_90d": 75.6,
-    "yesterday_change_pct": -2.086
+    "yesterday_range_pct": 2.171,
+    "avg20_range_pct": 2.931,
+    "atr14_pct": 3.338,
+    "yesterday_pctile_90d": 36.7,
+    "yesterday_change_pct": 0.297
    },
    "spot_perp_gap_30d": {
     "days": 30,
     "median_abs_pct_high": 0.0336,
     "median_abs_pct_low": 0.0605,
-    "median_abs_pct_close": 0.0481
+    "median_abs_pct_close": 0.0465
    }
   },
   "ETH": {
-   "price": 2068.03,
+   "price": 2047.31,
    "price_src": "spot",
-   "archive_end_utc": "2026-11-09 23:00",
+   "archive_end_utc": "2026-11-10 23:00",
    "live_source": "spot",
-   "live_bars": 30,
-   "last_closed_bar_utc": "2026-11-11 05:00",
+   "live_bars": 31,
+   "last_closed_bar_utc": "2026-11-12 06:00",
    "levels": [
     {
      "name": "PMH",
      "kind": "month",
      "price": 2779.0,
-     "dist_pct": 34.379,
+     "dist_pct": 35.739,
      "state": "untouched",
      "src": "perp"
     },
@@ -185,7 +185,7 @@
      "name": "PWH",
      "kind": "week",
      "price": 2449.95,
-     "dist_pct": 18.468,
+     "dist_pct": 19.667,
      "state": "untouched",
      "src": "perp"
     },
@@ -193,7 +193,7 @@
      "name": "MO",
      "kind": "month",
      "price": 2254.54,
-     "dist_pct": 9.019,
+     "dist_pct": 10.122,
      "state": null,
      "src": "perp"
     },
@@ -201,7 +201,7 @@
      "name": "WKH",
      "kind": "week",
      "price": 2250.6,
-     "dist_pct": 8.828,
+     "dist_pct": 9.93,
      "state": "untouched",
      "src": "perp"
     },
@@ -209,7 +209,7 @@
      "name": "PWM",
      "kind": "week",
      "price": 2250.135,
-     "dist_pct": 8.806,
+     "dist_pct": 9.907,
      "state": null,
      "src": "perp"
     },
@@ -217,7 +217,7 @@
      "name": "PML",
      "kind": "month",
      "price": 2172.85,
-     "dist_pct": 5.069,
+     "dist_pct": 6.132,
      "state": "accepted below",
      "src": "perp"
     },
@@ -225,39 +225,39 @@
      "name": "MONH",
      "kind": "week",
      "price": 2159.25,
-     "dist_pct": 4.411,
+     "dist_pct": 5.468,
      "state": "untouched",
      "src": "perp"
-    },
-    {
-     "name": "PDH",
-     "kind": "day",
-     "price": 2136.77,
-     "dist_pct": 3.324,
-     "state": "untouched",
-     "src": "spot"
     },
     {
      "name": "WO",
      "kind": "week",
      "price": 2126.26,
-     "dist_pct": 2.816,
+     "dist_pct": 3.856,
      "state": null,
      "src": "perp"
+    },
+    {
+     "name": "PDH",
+     "kind": "day",
+     "price": 2103.78,
+     "dist_pct": 2.758,
+     "state": "untouched",
+     "src": "spot"
     },
     {
      "name": "MONL",
      "kind": "week",
      "price": 2081.41,
-     "dist_pct": 0.647,
+     "dist_pct": 1.666,
      "state": "accepted below",
      "src": "perp"
     },
     {
      "name": "DO",
      "kind": "day",
-     "price": 2053.22,
-     "dist_pct": -0.716,
+     "price": 2056.35,
+     "dist_pct": 0.442,
      "state": null,
      "src": "spot"
     },
@@ -265,7 +265,7 @@
      "name": "PWL",
      "kind": "week",
      "price": 2050.32,
-     "dist_pct": -0.856,
+     "dist_pct": 0.147,
      "state": "accepted below",
      "src": "perp"
     },
@@ -273,72 +273,70 @@
      "name": "WKL",
      "kind": "week",
      "price": 2050.32,
-     "dist_pct": -0.856,
+     "dist_pct": 0.147,
      "state": "accepted below",
      "src": "perp"
     },
     {
      "name": "PDL",
      "kind": "day",
-     "price": 2006.0,
-     "dist_pct": -2.999,
+     "price": 2035.83,
+     "dist_pct": -0.561,
      "state": "untouched",
      "src": "spot"
     }
    ],
    "nearest_above": [
-    "MONL",
-    "WO",
-    "PDH"
+    "PWL",
+    "WKL",
+    "DO"
    ],
    "nearest_below": [
-    "DO",
-    "PWL",
-    "WKL"
+    "PDL"
    ],
    "yesterday_daily_levels": [
     {
      "name": "PDH",
-     "price": 2159.25,
+     "price": 2135.9,
      "state": "untouched",
      "src": "perp"
     },
     {
      "name": "PDL",
-     "price": 2081.41,
-     "state": "accepted below",
+     "price": 2003.57,
+     "state": "untouched",
      "src": "perp"
     }
    ],
    "vol": {
-    "yesterday_utc": "2026-11-10",
+    "yesterday_utc": "2026-11-11",
     "yesterday_src": "spot",
-    "yesterday_range_pct": 6.124,
-    "avg20_range_pct": 4.244,
-    "atr14_pct": 5.061,
-    "yesterday_pctile_90d": 83.3,
-    "yesterday_change_pct": -3.841
+    "yesterday_range_pct": 3.309,
+    "avg20_range_pct": 4.227,
+    "atr14_pct": 5.06,
+    "yesterday_pctile_90d": 47.8,
+    "yesterday_change_pct": 0.153
    },
    "spot_perp_gap_30d": {
     "days": 30,
     "median_abs_pct_high": 0.031,
-    "median_abs_pct_low": 0.0682,
+    "median_abs_pct_low": 0.0707,
     "median_abs_pct_close": 0.0482
    }
   },
   "XRP": {
-   "price": 1.0606,
+   "price": 1.0444,
    "price_src": "spot",
-   "archive_end_utc": "2026-11-09 23:00",
+   "archive_end_utc": "2026-11-10 23:00",
    "live_source": "spot",
-   "live_bars": 30,
-   "last_closed_bar_utc": "2026-11-11 05:00",
+   "live_bars": 31,
+   "last_closed_bar_utc": "2026-11-12 06:00",
    "levels": [
     {
      "name": "PMH",
      "kind": "month",
      "price": 1.5552,
-     "dist_pct": 46.634,
+     "dist_pct": 48.908,
      "state": "untouched",
      "src": "perp"
     },
@@ -346,7 +344,7 @@
      "name": "PWH",
      "kind": "week",
      "price": 1.3424,
-     "dist_pct": 26.57,
+     "dist_pct": 28.533,
      "state": "untouched",
      "src": "perp"
     },
@@ -354,7 +352,7 @@
      "name": "MO",
      "kind": "month",
      "price": 1.2513,
-     "dist_pct": 17.98,
+     "dist_pct": 19.81,
      "state": null,
      "src": "perp"
     },
@@ -362,7 +360,7 @@
      "name": "PWM",
      "kind": "week",
      "price": 1.2153,
-     "dist_pct": 14.586,
+     "dist_pct": 16.363,
      "state": null,
      "src": "perp"
     },
@@ -370,7 +368,7 @@
      "name": "PML",
      "kind": "month",
      "price": 1.1991,
-     "dist_pct": 13.059,
+     "dist_pct": 14.812,
      "state": "accepted below",
      "src": "perp"
     },
@@ -378,7 +376,7 @@
      "name": "WKH",
      "kind": "week",
      "price": 1.1821,
-     "dist_pct": 11.456,
+     "dist_pct": 13.185,
      "state": "untouched",
      "src": "perp"
     },
@@ -386,7 +384,7 @@
      "name": "MONH",
      "kind": "week",
      "price": 1.126,
-     "dist_pct": 6.166,
+     "dist_pct": 7.813,
      "state": "untouched",
      "src": "perp"
     },
@@ -394,23 +392,15 @@
      "name": "WO",
      "kind": "week",
      "price": 1.1126,
-     "dist_pct": 4.903,
+     "dist_pct": 6.53,
      "state": null,
      "src": "perp"
-    },
-    {
-     "name": "PDH",
-     "kind": "day",
-     "price": 1.1063,
-     "dist_pct": 4.309,
-     "state": "untouched",
-     "src": "spot"
     },
     {
      "name": "PWL",
      "kind": "week",
      "price": 1.0882,
-     "dist_pct": 2.602,
+     "dist_pct": 4.194,
      "state": "accepted below",
      "src": "perp"
     },
@@ -418,87 +408,94 @@
      "name": "WKL",
      "kind": "week",
      "price": 1.0882,
-     "dist_pct": 2.602,
+     "dist_pct": 4.194,
      "state": "accepted below",
      "src": "perp"
+    },
+    {
+     "name": "PDH",
+     "kind": "day",
+     "price": 1.0808,
+     "dist_pct": 3.485,
+     "state": "untouched",
+     "src": "spot"
     },
     {
      "name": "MONL",
      "kind": "week",
      "price": 1.076,
-     "dist_pct": 1.452,
+     "dist_pct": 3.026,
      "state": "accepted below",
      "src": "perp"
     },
     {
      "name": "DO",
      "kind": "day",
-     "price": 1.0565,
-     "dist_pct": -0.387,
+     "price": 1.0523,
+     "dist_pct": 0.756,
      "state": null,
      "src": "spot"
     },
     {
      "name": "PDL",
      "kind": "day",
-     "price": 1.0311,
-     "dist_pct": -2.781,
-     "state": "untouched",
+     "price": 1.041,
+     "dist_pct": -0.326,
+     "state": "swept, back inside",
      "src": "spot"
     }
    ],
    "nearest_above": [
+    "DO",
     "MONL",
-    "PWL",
-    "WKL"
+    "PDH"
    ],
    "nearest_below": [
-    "DO",
     "PDL"
    ],
    "yesterday_daily_levels": [
     {
      "name": "PDH",
-     "price": 1.126,
+     "price": 1.1062,
      "state": "untouched",
      "src": "perp"
     },
     {
      "name": "PDL",
-     "price": 1.076,
-     "state": "accepted below",
+     "price": 1.0301,
+     "state": "untouched",
      "src": "perp"
     }
    ],
    "vol": {
-    "yesterday_utc": "2026-11-10",
+    "yesterday_utc": "2026-11-11",
     "yesterday_src": "spot",
-    "yesterday_range_pct": 6.843,
-    "avg20_range_pct": 4.663,
-    "atr14_pct": 5.835,
-    "yesterday_pctile_90d": 73.3,
-    "yesterday_change_pct": -3.858
+    "yesterday_range_pct": 3.767,
+    "avg20_range_pct": 4.6,
+    "atr14_pct": 5.836,
+    "yesterday_pctile_90d": 37.8,
+    "yesterday_change_pct": -0.388
    },
    "spot_perp_gap_30d": {
     "days": 30,
-    "median_abs_pct_high": 0.0395,
-    "median_abs_pct_low": 0.0655,
+    "median_abs_pct_high": 0.0381,
+    "median_abs_pct_low": 0.0694,
     "median_abs_pct_close": 0.0459
    }
   },
   "BNB": {
-   "price": 681.65,
+   "price": 674.04,
    "price_src": "spot",
-   "archive_end_utc": "2026-11-09 23:00",
+   "archive_end_utc": "2026-11-10 23:00",
    "live_source": "spot",
-   "live_bars": 30,
-   "last_closed_bar_utc": "2026-11-11 05:00",
+   "live_bars": 31,
+   "last_closed_bar_utc": "2026-11-12 06:00",
    "levels": [
     {
      "name": "PMH",
      "kind": "month",
      "price": 811.18,
-     "dist_pct": 19.002,
+     "dist_pct": 20.346,
      "state": "untouched",
      "src": "perp"
     },
@@ -506,7 +503,7 @@
      "name": "PWH",
      "kind": "week",
      "price": 723.99,
-     "dist_pct": 6.211,
+     "dist_pct": 7.411,
      "state": "untouched",
      "src": "perp"
     },
@@ -514,7 +511,7 @@
      "name": "MO",
      "kind": "month",
      "price": 704.18,
-     "dist_pct": 3.305,
+     "dist_pct": 4.472,
      "state": null,
      "src": "perp"
     },
@@ -522,7 +519,7 @@
      "name": "WKH",
      "kind": "week",
      "price": 702.52,
-     "dist_pct": 3.062,
+     "dist_pct": 4.225,
      "state": "untouched",
      "src": "perp"
     },
@@ -530,39 +527,39 @@
      "name": "PWM",
      "kind": "week",
      "price": 701.11,
-     "dist_pct": 2.855,
+     "dist_pct": 4.016,
      "state": null,
      "src": "perp"
-    },
-    {
-     "name": "PDH",
-     "kind": "day",
-     "price": 692.64,
-     "dist_pct": 1.612,
-     "state": "untouched",
-     "src": "spot"
     },
     {
      "name": "MONH",
      "kind": "week",
      "price": 692.34,
-     "dist_pct": 1.568,
+     "dist_pct": 2.715,
      "state": "swept, back inside",
      "src": "perp"
+    },
+    {
+     "name": "PDH",
+     "kind": "day",
+     "price": 689.3,
+     "dist_pct": 2.264,
+     "state": "untouched",
+     "src": "spot"
     },
     {
      "name": "WO",
      "kind": "week",
      "price": 685.5,
-     "dist_pct": 0.565,
+     "dist_pct": 1.7,
      "state": null,
      "src": "perp"
     },
     {
      "name": "DO",
      "kind": "day",
-     "price": 680.59,
-     "dist_pct": -0.156,
+     "price": 679.76,
+     "dist_pct": 0.849,
      "state": null,
      "src": "spot"
     },
@@ -570,7 +567,7 @@
      "name": "PWL",
      "kind": "week",
      "price": 678.23,
-     "dist_pct": -0.502,
+     "dist_pct": 0.622,
      "state": "accepted below",
      "src": "perp"
     },
@@ -578,7 +575,7 @@
      "name": "WKL",
      "kind": "week",
      "price": 678.23,
-     "dist_pct": -0.502,
+     "dist_pct": 0.622,
      "state": "accepted below",
      "src": "perp"
     },
@@ -586,80 +583,78 @@
      "name": "PML",
      "kind": "month",
      "price": 677.76,
-     "dist_pct": -0.571,
+     "dist_pct": 0.552,
      "state": "accepted below",
-     "src": "perp"
-    },
-    {
-     "name": "MONL",
-     "kind": "week",
-     "price": 673.58,
-     "dist_pct": -1.184,
-     "state": "swept, back inside",
      "src": "perp"
     },
     {
      "name": "PDL",
      "kind": "day",
-     "price": 670.06,
-     "dist_pct": -1.7,
-     "state": "untouched",
+     "price": 676.77,
+     "dist_pct": 0.405,
+     "state": "beyond, not accepted yet",
      "src": "spot"
+    },
+    {
+     "name": "MONL",
+     "kind": "week",
+     "price": 673.58,
+     "dist_pct": -0.068,
+     "state": "beyond, not accepted yet",
+     "src": "perp"
     }
    ],
    "nearest_above": [
-    "WO",
-    "MONH",
-    "PDH"
+    "PDL",
+    "PML",
+    "PWL"
    ],
    "nearest_below": [
-    "DO",
-    "PWL",
-    "WKL"
+    "MONL"
    ],
    "yesterday_daily_levels": [
     {
      "name": "PDH",
-     "price": 692.34,
-     "state": "swept, back inside",
+     "price": 693.13,
+     "state": "untouched",
      "src": "perp"
     },
     {
      "name": "PDL",
-     "price": 673.58,
-     "state": "swept, back inside",
+     "price": 670.23,
+     "state": "untouched",
      "src": "perp"
     }
    ],
    "vol": {
-    "yesterday_utc": "2026-11-10",
+    "yesterday_utc": "2026-11-11",
     "yesterday_src": "spot",
-    "yesterday_range_pct": 3.266,
-    "avg20_range_pct": 3.345,
-    "atr14_pct": 3.91,
-    "yesterday_pctile_90d": 64.4,
-    "yesterday_change_pct": -1.569
+    "yesterday_range_pct": 1.841,
+    "avg20_range_pct": 3.358,
+    "atr14_pct": 3.833,
+    "yesterday_pctile_90d": 23.3,
+    "yesterday_change_pct": -0.122
    },
    "spot_perp_gap_30d": {
     "days": 30,
-    "median_abs_pct_high": 0.0625,
+    "median_abs_pct_high": 0.0639,
     "median_abs_pct_low": 0.033,
-    "median_abs_pct_close": 0.0513
+    "median_abs_pct_close": 0.0522
    }
   },
   "LTC": {
-   "price": 51.03,
+   "price": 49.72,
    "price_src": "spot",
-   "archive_end_utc": "2026-11-09 23:00",
+   "archive_end_utc": "2026-11-10 23:00",
    "live_source": "spot",
-   "live_bars": 30,
-   "last_closed_bar_utc": "2026-11-11 05:00",
+   "live_bars": 31,
+   "last_closed_bar_utc": "2026-11-12 06:00",
    "levels": [
     {
      "name": "PMH",
      "kind": "month",
      "price": 72.25,
-     "dist_pct": 41.583,
+     "dist_pct": 45.314,
      "state": "untouched",
      "src": "perp"
     },
@@ -667,7 +662,7 @@
      "name": "PWH",
      "kind": "week",
      "price": 57.06,
-     "dist_pct": 11.817,
+     "dist_pct": 14.763,
      "state": "untouched",
      "src": "perp"
     },
@@ -675,7 +670,7 @@
      "name": "MO",
      "kind": "month",
      "price": 55.74,
-     "dist_pct": 9.23,
+     "dist_pct": 12.108,
      "state": null,
      "src": "perp"
     },
@@ -683,7 +678,7 @@
      "name": "PWM",
      "kind": "week",
      "price": 53.035,
-     "dist_pct": 3.929,
+     "dist_pct": 6.667,
      "state": null,
      "src": "perp"
     },
@@ -691,7 +686,7 @@
      "name": "PML",
      "kind": "month",
      "price": 52.77,
-     "dist_pct": 3.41,
+     "dist_pct": 6.134,
      "state": "accepted below",
      "src": "perp"
     },
@@ -699,7 +694,7 @@
      "name": "WKH",
      "kind": "week",
      "price": 52.6,
-     "dist_pct": 3.077,
+     "dist_pct": 5.792,
      "state": "untouched",
      "src": "perp"
     },
@@ -707,23 +702,23 @@
      "name": "MONH",
      "kind": "week",
      "price": 52.25,
-     "dist_pct": 2.391,
+     "dist_pct": 5.088,
      "state": "untouched",
      "src": "perp"
     },
     {
      "name": "PDH",
      "kind": "day",
-     "price": 51.8,
-     "dist_pct": 1.509,
+     "price": 51.73,
+     "dist_pct": 4.043,
      "state": "untouched",
      "src": "spot"
     },
     {
      "name": "DO",
      "kind": "day",
-     "price": 50.73,
-     "dist_pct": -0.588,
+     "price": 50.23,
+     "dist_pct": 1.026,
      "state": null,
      "src": "spot"
     },
@@ -731,7 +726,7 @@
      "name": "WO",
      "kind": "week",
      "price": 50.08,
-     "dist_pct": -1.862,
+     "dist_pct": 0.724,
      "state": null,
      "src": "perp"
     },
@@ -739,23 +734,23 @@
      "name": "MONL",
      "kind": "week",
      "price": 49.74,
-     "dist_pct": -2.528,
-     "state": "swept, back inside",
+     "dist_pct": 0.04,
+     "state": "beyond, not accepted yet",
      "src": "perp"
     },
     {
      "name": "PDL",
      "kind": "day",
-     "price": 49.52,
-     "dist_pct": -2.959,
-     "state": "untouched",
+     "price": 49.47,
+     "dist_pct": -0.503,
+     "state": "swept, back inside",
      "src": "spot"
     },
     {
      "name": "PWL",
      "kind": "week",
      "price": 49.01,
-     "dist_pct": -3.958,
+     "dist_pct": -1.428,
      "state": "untouched",
      "src": "perp"
     },
@@ -763,64 +758,64 @@
      "name": "WKL",
      "kind": "week",
      "price": 49.01,
-     "dist_pct": -3.958,
+     "dist_pct": -1.428,
      "state": "untouched",
      "src": "perp"
     }
    ],
    "nearest_above": [
-    "PDH",
-    "MONH",
-    "WKH"
+    "MONL",
+    "WO",
+    "DO"
    ],
    "nearest_below": [
-    "DO",
-    "WO",
-    "MONL"
+    "PDL",
+    "PWL",
+    "WKL"
    ],
    "yesterday_daily_levels": [
     {
      "name": "PDH",
-     "price": 52.25,
+     "price": 51.79,
      "state": "untouched",
      "src": "perp"
     },
     {
      "name": "PDL",
-     "price": 49.74,
-     "state": "swept, back inside",
+     "price": 49.43,
+     "state": "untouched",
      "src": "perp"
     }
    ],
    "vol": {
-    "yesterday_utc": "2026-11-10",
+    "yesterday_utc": "2026-11-11",
     "yesterday_src": "spot",
-    "yesterday_range_pct": 4.435,
-    "avg20_range_pct": 4.828,
-    "atr14_pct": 5.586,
+    "yesterday_range_pct": 4.455,
+    "avg20_range_pct": 4.945,
+    "atr14_pct": 5.749,
     "yesterday_pctile_90d": 51.1,
-    "yesterday_change_pct": -1.323
+    "yesterday_change_pct": -0.986
    },
    "spot_perp_gap_30d": {
     "days": 30,
     "median_abs_pct_high": 0.0533,
-    "median_abs_pct_low": 0.0818,
+    "median_abs_pct_low": 0.0854,
     "median_abs_pct_close": 0.0679
    }
   },
   "HYPE": {
-   "price": 72.08,
+   "price": 71.27,
    "price_src": "spot",
-   "archive_end_utc": "2026-11-09 23:00",
+   "archive_end_utc": "2026-11-10 23:00",
    "live_source": "spot",
-   "live_bars": 30,
-   "last_closed_bar_utc": "2026-11-11 05:00",
+   "live_bars": 31,
+   "last_closed_bar_utc": "2026-11-12 06:00",
    "levels": [
     {
      "name": "PMH",
      "kind": "month",
      "price": 97.193,
-     "dist_pct": 34.84,
+     "dist_pct": 36.373,
      "state": "untouched",
      "src": "perp"
     },
@@ -828,7 +823,7 @@
      "name": "PWH",
      "kind": "week",
      "price": 89.068,
-     "dist_pct": 23.568,
+     "dist_pct": 24.973,
      "state": "untouched",
      "src": "perp"
     },
@@ -836,7 +831,7 @@
      "name": "MO",
      "kind": "month",
      "price": 88.055,
-     "dist_pct": 22.163,
+     "dist_pct": 23.551,
      "state": null,
      "src": "perp"
     },
@@ -844,7 +839,7 @@
      "name": "PWM",
      "kind": "week",
      "price": 81.39,
-     "dist_pct": 12.916,
+     "dist_pct": 14.2,
      "state": null,
      "src": "perp"
     },
@@ -852,7 +847,7 @@
      "name": "WKH",
      "kind": "week",
      "price": 79.67,
-     "dist_pct": 10.53,
+     "dist_pct": 11.786,
      "state": "untouched",
      "src": "perp"
     },
@@ -860,23 +855,15 @@
      "name": "MONH",
      "kind": "week",
      "price": 76.745,
-     "dist_pct": 6.472,
+     "dist_pct": 7.682,
      "state": "untouched",
      "src": "perp"
-    },
-    {
-     "name": "PDH",
-     "kind": "day",
-     "price": 75.4,
-     "dist_pct": 4.606,
-     "state": "untouched",
-     "src": "spot"
     },
     {
      "name": "WO",
      "kind": "week",
      "price": 74.516,
-     "dist_pct": 3.38,
+     "dist_pct": 4.555,
      "state": null,
      "src": "perp"
     },
@@ -884,15 +871,23 @@
      "name": "PML",
      "kind": "month",
      "price": 74.413,
-     "dist_pct": 3.237,
+     "dist_pct": 4.41,
      "state": "accepted below",
      "src": "perp"
+    },
+    {
+     "name": "PDH",
+     "kind": "day",
+     "price": 74.4,
+     "dist_pct": 4.392,
+     "state": "untouched",
+     "src": "spot"
     },
     {
      "name": "PWL",
      "kind": "week",
      "price": 73.712,
-     "dist_pct": 2.264,
+     "dist_pct": 3.426,
      "state": "accepted below",
      "src": "perp"
     },
@@ -900,7 +895,7 @@
      "name": "WKL",
      "kind": "week",
      "price": 73.712,
-     "dist_pct": 2.264,
+     "dist_pct": 3.426,
      "state": "accepted below",
      "src": "perp"
     },
@@ -908,23 +903,23 @@
      "name": "MONL",
      "kind": "week",
      "price": 72.439,
-     "dist_pct": 0.498,
+     "dist_pct": 1.64,
      "state": "accepted below",
      "src": "perp"
     },
     {
      "name": "DO",
      "kind": "day",
-     "price": 72.32,
-     "dist_pct": 0.333,
+     "price": 72.09,
+     "dist_pct": 1.151,
      "state": null,
      "src": "spot"
     },
     {
      "name": "PDL",
      "kind": "day",
-     "price": 70.42,
-     "dist_pct": -2.303,
+     "price": 70.6,
+     "dist_pct": -0.94,
      "state": "untouched",
      "src": "spot"
     }
@@ -940,151 +935,151 @@
    "yesterday_daily_levels": [
     {
      "name": "PDH",
-     "price": 76.745,
+     "price": 75.355,
      "state": "untouched",
      "src": "perp"
     },
     {
      "name": "PDL",
-     "price": 72.439,
-     "state": "accepted below",
+     "price": 70.347,
+     "state": "untouched",
      "src": "perp"
     }
    ],
    "vol": {
-    "yesterday_utc": "2026-11-10",
+    "yesterday_utc": "2026-11-11",
     "yesterday_src": "spot",
-    "yesterday_range_pct": 6.624,
-    "avg20_range_pct": 6.399,
-    "atr14_pct": 8.21,
-    "yesterday_pctile_90d": 71.1,
-    "yesterday_change_pct": -3.818
+    "yesterday_range_pct": 5.254,
+    "avg20_range_pct": 6.515,
+    "atr14_pct": 8.141,
+    "yesterday_pctile_90d": 50.0,
+    "yesterday_change_pct": -0.304
    },
    "spot_perp_gap_30d": {
     "days": 30,
-    "median_abs_pct_high": 0.0371,
-    "median_abs_pct_low": 0.0545,
-    "median_abs_pct_close": 0.0373
+    "median_abs_pct_high": 0.0402,
+    "median_abs_pct_low": 0.0581,
+    "median_abs_pct_close": 0.0402
    }
   }
  },
  "positioning": {
   "BTC": {
    "hl": {
-    "funding_hourly": 1.25e-05,
-    "funding_ann_pct": 10.95,
-    "oi_coins": 40789.34,
-    "oi_usd": 3012293115.0,
-    "premium_pct": -0.0257,
-    "chg_24h_pct": -1.028,
-    "mark": 73850.0
+    "funding_hourly": 5.8994e-06,
+    "funding_ann_pct": 5.17,
+    "oi_coins": 39925.98,
+    "oi_usd": 2936659970.0,
+    "premium_pct": -0.0478,
+    "chg_24h_pct": -0.035,
+    "mark": 73552.6
    },
    "okx": {
     "funding_8h_pct": 0.01,
     "funding_ann_pct": 10.95,
-    "oi_usd": 2652283455.0,
-    "oi_all_usd": 3819844704.0,
-    "oi_chg_24h_pct": 1.02,
+    "oi_usd": 2599188320.0,
+    "oi_all_usd": 3772941752.0,
+    "oi_chg_24h_pct": -1.19,
     "oi_chg_24h_from_to_utc": [
-     "2026-11-10 06:00",
-     "2026-11-11 06:00"
+     "2026-11-11 06:00",
+     "2026-11-12 06:00"
     ],
     "oi_chg_24h_zero_rows": 0,
-    "oi_chg_7d_pct": 5.21,
+    "oi_chg_7d_pct": 0.31,
     "oi_chg_7d_from_to_utc": [
-     "2026-11-03 16:00",
-     "2026-11-10 16:00"
+     "2026-11-04 16:00",
+     "2026-11-11 16:00"
     ],
     "oi_chg_7d_zero_rows": 0
    },
    "coinbase_premium": {
-    "hour_utc": "2026-11-11 05:00",
-    "pct": -0.1298
+    "hour_utc": "2026-11-12 06:00",
+    "pct": -0.141
    }
   },
   "ETH": {
    "hl": {
-    "funding_hourly": 1.25e-05,
-    "funding_ann_pct": 10.95,
-    "oi_coins": 771454.93,
-    "oi_usd": 1594975353.0,
-    "premium_pct": -0.0261,
-    "chg_24h_pct": -2.353,
-    "mark": 2067.49
+    "funding_hourly": -3.2037e-06,
+    "funding_ann_pct": -2.81,
+    "oi_coins": 760540.93,
+    "oi_usd": 1556523074.0,
+    "premium_pct": -0.0537,
+    "chg_24h_pct": -0.38,
+    "mark": 2046.6
    },
    "okx": {
-    "funding_8h_pct": 0.00031,
-    "funding_ann_pct": 0.34,
-    "oi_usd": 1414035020.0,
-    "oi_all_usd": 1764708130.0,
-    "oi_chg_24h_pct": -1.19,
+    "funding_8h_pct": 0.0042,
+    "funding_ann_pct": 4.6,
+    "oi_usd": 1373182172.0,
+    "oi_all_usd": 1715261483.0,
+    "oi_chg_24h_pct": -1.8,
     "oi_chg_24h_from_to_utc": [
-     "2026-11-10 06:00",
-     "2026-11-11 06:00"
+     "2026-11-11 07:00",
+     "2026-11-12 07:00"
     ],
     "oi_chg_24h_zero_rows": 0,
-    "oi_chg_7d_pct": -3.81,
+    "oi_chg_7d_pct": -12.73,
     "oi_chg_7d_from_to_utc": [
-     "2026-11-03 16:00",
-     "2026-11-10 16:00"
+     "2026-11-04 16:00",
+     "2026-11-11 16:00"
     ],
     "oi_chg_7d_zero_rows": 0
    }
   },
   "XRP": {
    "hl": {
-    "funding_hourly": 2.9821e-06,
-    "funding_ann_pct": 2.61,
-    "oi_coins": 98243248.0,
-    "oi_usd": 104157492.0,
-    "premium_pct": -0.0444,
-    "chg_24h_pct": -3.249,
-    "mark": 1.0602
+    "funding_hourly": 7.0791e-06,
+    "funding_ann_pct": 6.2,
+    "oi_coins": 91841048.0,
+    "oi_usd": 95891238.0,
+    "premium_pct": -0.0611,
+    "chg_24h_pct": -0.845,
+    "mark": 1.0441
    },
    "okx": {
     "funding_8h_pct": 0.01,
     "funding_ann_pct": 10.95,
-    "oi_usd": 81617333.0,
-    "oi_all_usd": 103310412.0,
-    "oi_chg_24h_pct": -3.26,
+    "oi_usd": 85673563.0,
+    "oi_all_usd": 105713734.0,
+    "oi_chg_24h_pct": 2.33,
     "oi_chg_24h_from_to_utc": [
-     "2026-11-10 06:00",
-     "2026-11-11 06:00"
+     "2026-11-11 06:00",
+     "2026-11-12 06:00"
     ],
     "oi_chg_24h_zero_rows": 0,
-    "oi_chg_7d_pct": -19.66,
+    "oi_chg_7d_pct": -20.07,
     "oi_chg_7d_from_to_utc": [
-     "2026-11-03 16:00",
-     "2026-11-10 16:00"
+     "2026-11-04 16:00",
+     "2026-11-11 16:00"
     ],
     "oi_chg_7d_zero_rows": 0
    }
   },
   "BNB": {
    "hl": {
-    "funding_hourly": 1.25e-05,
-    "funding_ann_pct": 10.95,
-    "oi_coins": 53755.36,
-    "oi_usd": 36641372.0,
-    "premium_pct": 0.0,
-    "chg_24h_pct": -1.203,
-    "mark": 681.632
+    "funding_hourly": 6.8958e-06,
+    "funding_ann_pct": 6.04,
+    "oi_coins": 53619.28,
+    "oi_usd": 36117946.0,
+    "premium_pct": -0.0509,
+    "chg_24h_pct": -0.564,
+    "mark": 673.6
    },
    "okx": {
-    "funding_8h_pct": 0.01,
-    "funding_ann_pct": 10.95,
-    "oi_usd": 40971011.0,
-    "oi_all_usd": 43234204.0,
-    "oi_chg_24h_pct": -2.21,
+    "funding_8h_pct": -0.00027,
+    "funding_ann_pct": -0.29,
+    "oi_usd": 40138493.0,
+    "oi_all_usd": 42386664.0,
+    "oi_chg_24h_pct": -2.7,
     "oi_chg_24h_from_to_utc": [
-     "2026-11-10 05:00",
-     "2026-11-11 05:00"
+     "2026-11-11 07:00",
+     "2026-11-12 07:00"
     ],
     "oi_chg_24h_zero_rows": 0,
-    "oi_chg_7d_pct": -17.69,
+    "oi_chg_7d_pct": -17.99,
     "oi_chg_7d_from_to_utc": [
-     "2026-11-03 16:00",
-     "2026-11-10 16:00"
+     "2026-11-04 16:00",
+     "2026-11-11 16:00"
     ],
     "oi_chg_7d_zero_rows": 0
    }
@@ -1093,56 +1088,56 @@
    "hl": {
     "funding_hourly": 1.25e-05,
     "funding_ann_pct": 10.95,
-    "oi_coins": 343881.22,
-    "oi_usd": 17539318.0,
-    "premium_pct": -0.02,
-    "chg_24h_pct": -0.523,
-    "mark": 51.004
+    "oi_coins": 367540.4,
+    "oi_usd": 18270066.0,
+    "premium_pct": -0.0545,
+    "chg_24h_pct": -1.395,
+    "mark": 49.709
    },
    "okx": {
-    "funding_8h_pct": 0.00596,
-    "funding_ann_pct": 6.53,
-    "oi_usd": 25305178.0,
-    "oi_all_usd": 33043016.0,
-    "oi_chg_24h_pct": -1.85,
+    "funding_8h_pct": 0.006,
+    "funding_ann_pct": 6.57,
+    "oi_usd": 24852599.0,
+    "oi_all_usd": 32643255.0,
+    "oi_chg_24h_pct": -1.06,
     "oi_chg_24h_from_to_utc": [
-     "2026-11-10 06:00",
-     "2026-11-11 06:00"
+     "2026-11-11 06:00",
+     "2026-11-12 06:00"
     ],
     "oi_chg_24h_zero_rows": 0,
-    "oi_chg_7d_pct": -7.72,
+    "oi_chg_7d_pct": -8.21,
     "oi_chg_7d_from_to_utc": [
-     "2026-11-03 16:00",
-     "2026-11-10 16:00"
+     "2026-11-04 16:00",
+     "2026-11-11 16:00"
     ],
     "oi_chg_7d_zero_rows": 0
    }
   },
   "HYPE": {
    "hl": {
-    "funding_hourly": 1.25e-05,
-    "funding_ann_pct": 10.95,
-    "oi_coins": 21364410.76,
-    "oi_usd": 1538226893.0,
-    "premium_pct": -0.0063,
-    "chg_24h_pct": -3.381,
-    "mark": 71.9995
+    "funding_hourly": 5.6822e-06,
+    "funding_ann_pct": 4.98,
+    "oi_coins": 21327399.18,
+    "oi_usd": 1517785690.0,
+    "premium_pct": -0.0611,
+    "chg_24h_pct": -0.307,
+    "mark": 71.166
    },
    "okx": {
-    "funding_8h_pct": 0.01,
-    "funding_ann_pct": 10.95,
-    "oi_usd": 107193799.0,
-    "oi_all_usd": 115464884.0,
-    "oi_chg_24h_pct": -4.06,
+    "funding_8h_pct": 0.00985,
+    "funding_ann_pct": 10.79,
+    "oi_usd": 105153496.0,
+    "oi_all_usd": 113775733.0,
+    "oi_chg_24h_pct": -1.62,
     "oi_chg_24h_from_to_utc": [
-     "2026-11-10 05:00",
-     "2026-11-11 05:00"
+     "2026-11-11 06:00",
+     "2026-11-12 06:00"
     ],
     "oi_chg_24h_zero_rows": 0,
-    "oi_chg_7d_pct": -3.82,
+    "oi_chg_7d_pct": -6.35,
     "oi_chg_7d_from_to_utc": [
-     "2026-11-03 16:00",
-     "2026-11-10 16:00"
+     "2026-11-04 16:00",
+     "2026-11-11 16:00"
     ],
     "oi_chg_7d_zero_rows": 0
    }
@@ -1150,15 +1145,15 @@
  },
  "dvol": {
   "BTC": {
-   "dvol": 39.4,
-   "pctile_1y": 38.1,
-   "change_7d": 1.34,
+   "dvol": 39.11,
+   "pctile_1y": 37.0,
+   "change_7d": -3.16,
    "days": 371
   },
   "ETH": {
-   "dvol": 55.88,
-   "pctile_1y": 46.5,
-   "change_7d": 3.98,
+   "dvol": 54.52,
+   "pctile_1y": 39.7,
+   "change_7d": -2.92,
    "days": 371
   }
  },
@@ -1166,163 +1161,163 @@
   "BTC": {
    "next": [
     {
-     "expiry_utc": "2026-11-11 08:00",
-     "oi_coins": 2829.5,
-     "oi_usd": 208698912.0,
-     "put_call": 0.79
-    },
-    {
      "expiry_utc": "2026-11-12 08:00",
-     "oi_coins": 2427.3,
-     "oi_usd": 179061897.0,
-     "put_call": 0.925
+     "oi_coins": 3307.3,
+     "oi_usd": 243045010.0,
+     "put_call": 1.11
     },
     {
      "expiry_utc": "2026-11-13 08:00",
-     "oi_coins": 33362.1,
-     "oi_usd": 2461573173.0,
-     "put_call": 0.577
+     "oi_coins": 33268.3,
+     "oi_usd": 2445044061.0,
+     "put_call": 0.516
     },
     {
      "expiry_utc": "2026-11-14 08:00",
-     "oi_coins": 1026.9,
-     "oi_usd": 75782211.0,
-     "put_call": 1.237
+     "oi_coins": 1463.4,
+     "oi_usd": 107571110.0,
+     "put_call": 0.933
+    },
+    {
+     "expiry_utc": "2026-11-15 08:00",
+     "oi_coins": 399.7,
+     "oi_usd": 29386508.0,
+     "put_call": 0.815
     }
    ],
    "largest_next_30d": {
     "expiry_utc": "2026-11-27 08:00",
-    "oi_coins": 80048.4,
-    "oi_usd": 5921601203.0,
-    "put_call": 0.949
+    "oi_coins": 80031.8,
+    "oi_usd": 5897017533.0,
+    "put_call": 0.965
    },
-   "total_oi_coins": 349766.9
+   "total_oi_coins": 352915.6
   },
   "ETH": {
    "next": [
     {
-     "expiry_utc": "2026-11-11 08:00",
-     "oi_coins": 45038.0,
-     "oi_usd": 92997615.0,
-     "put_call": 0.719
-    },
-    {
      "expiry_utc": "2026-11-12 08:00",
-     "oi_coins": 26683.0,
-     "oi_usd": 55108400.0,
-     "put_call": 1.405
+     "oi_coins": 38704.0,
+     "oi_usd": 79132263.0,
+     "put_call": 1.03
     },
     {
      "expiry_utc": "2026-11-13 08:00",
-     "oi_coins": 145340.0,
-     "oi_usd": 300221571.0,
-     "put_call": 1.759
+     "oi_coins": 148175.0,
+     "oi_usd": 302992685.0,
+     "put_call": 1.526
     },
     {
      "expiry_utc": "2026-11-14 08:00",
-     "oi_coins": 6659.0,
-     "oi_usd": 13757094.0,
-     "put_call": 1.039
+     "oi_coins": 12999.0,
+     "oi_usd": 26584905.0,
+     "put_call": 0.979
+    },
+    {
+     "expiry_utc": "2026-11-15 08:00",
+     "oi_coins": 2698.0,
+     "oi_usd": 5518624.0,
+     "put_call": 1.121
     }
    ],
    "largest_next_30d": {
     "expiry_utc": "2026-11-27 08:00",
-    "oi_coins": 256850.0,
-    "oi_usd": 531445767.0,
-    "put_call": 0.5
+    "oi_coins": 260247.0,
+    "oi_usd": 533199259.0,
+    "put_call": 0.502
    },
-   "total_oi_coins": 1572455.0
+   "total_oi_coins": 1571152.0
   }
  },
  "movers": {
   "source": "Binance spot, rolling 24h at snapshot time",
-  "universe_n": 37,
+  "universe_n": 39,
   "min_qvol_musd": 10.0,
-  "btc_chg_24h_pct": -1.11,
-  "up_n": 12,
-  "beat_btc_n": 17,
+  "btc_chg_24h_pct": -0.028,
+  "up_n": 10,
+  "beat_btc_n": 11,
   "top": [
    {
-    "sym": "INIT",
-    "chg_24h_pct": 39.842,
-    "qvol_musd": 40.6
-   },
-   {
-    "sym": "ONE",
-    "chg_24h_pct": 27.398,
-    "qvol_musd": 29.9
-   },
-   {
-    "sym": "SOXLB",
-    "chg_24h_pct": 12.247,
-    "qvol_musd": 36.2
-   },
-   {
-    "sym": "CYBER",
-    "chg_24h_pct": 5.906,
-    "qvol_musd": 10.8
-   },
-   {
-    "sym": "GRAM",
-    "chg_24h_pct": 3.643,
-    "qvol_musd": 16.4
-   },
-   {
-    "sym": "MUB",
-    "chg_24h_pct": 3.588,
-    "qvol_musd": 19.2
-   },
-   {
-    "sym": "SPCXB",
-    "chg_24h_pct": 2.676,
-    "qvol_musd": 21.2
+    "sym": "OPG",
+    "chg_24h_pct": 8.085,
+    "qvol_musd": 11.1
    },
    {
     "sym": "SNDKB",
-    "chg_24h_pct": 1.666,
-    "qvol_musd": 57.5
+    "chg_24h_pct": 4.579,
+    "qvol_musd": 75.4
+   },
+   {
+    "sym": "MUB",
+    "chg_24h_pct": 3.666,
+    "qvol_musd": 30.3
+   },
+   {
+    "sym": "ERA",
+    "chg_24h_pct": 3.579,
+    "qvol_musd": 13.9
+   },
+   {
+    "sym": "GRAM",
+    "chg_24h_pct": 3.051,
+    "qvol_musd": 26.8
+   },
+   {
+    "sym": "AVAX",
+    "chg_24h_pct": 1.784,
+    "qvol_musd": 19.5
+   },
+   {
+    "sym": "GOOGLB",
+    "chg_24h_pct": 1.382,
+    "qvol_musd": 15.5
+   },
+   {
+    "sym": "ZEC",
+    "chg_24h_pct": 1.253,
+    "qvol_musd": 187.1
    }
   ],
   "bottom": [
    {
-    "sym": "ZEC",
-    "chg_24h_pct": -12.304,
-    "qvol_musd": 263.4
+    "sym": "INIT",
+    "chg_24h_pct": -47.186,
+    "qvol_musd": 32.6
    },
    {
-    "sym": "ARB",
-    "chg_24h_pct": -6.508,
-    "qvol_musd": 21.4
+    "sym": "PEPE",
+    "chg_24h_pct": -14.368,
+    "qvol_musd": 81.1
    },
    {
-    "sym": "QNT",
-    "chg_24h_pct": -5.437,
-    "qvol_musd": 13.1
-   },
-   {
-    "sym": "UNI",
-    "chg_24h_pct": -5.049,
-    "qvol_musd": 48.9
+    "sym": "INJ",
+    "chg_24h_pct": -9.16,
+    "qvol_musd": 14.5
    },
    {
     "sym": "NVDAB",
-    "chg_24h_pct": -3.957,
-    "qvol_musd": 72.6
+    "chg_24h_pct": -6.089,
+    "qvol_musd": 132.8
    },
    {
-    "sym": "HYPE",
-    "chg_24h_pct": -3.572,
-    "qvol_musd": 35.6
+    "sym": "ARB",
+    "chg_24h_pct": -5.916,
+    "qvol_musd": 13.1
    },
    {
-    "sym": "XRP",
-    "chg_24h_pct": -3.389,
-    "qvol_musd": 166.7
+    "sym": "ENA",
+    "chg_24h_pct": -5.43,
+    "qvol_musd": 19.1
    },
    {
-    "sym": "SOL",
-    "chg_24h_pct": -3.335,
-    "qvol_musd": 214.5
+    "sym": "SPCXB",
+    "chg_24h_pct": -4.641,
+    "qvol_musd": 46.1
+   },
+   {
+    "sym": "UNI",
+    "chg_24h_pct": -4.369,
+    "qvol_musd": 58.3
    }
   ]
  },
@@ -1333,18 +1328,18 @@
     "name": "Nasdaq 100",
     "symbol": "^NDX",
     "unit": "%",
-    "last": 27740.7891,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": -0.6,
-    "chg_5d": -1.56,
+    "last": 28374.25,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": 2.28,
+    "chg_5d": -0.22,
     "typical_move_90d": 1.05,
-    "flag_big_move": false,
-    "corr30_btc": 0.69,
-    "corr90_btc": 0.47,
+    "flag_big_move": true,
+    "corr30_btc": 0.7,
+    "corr90_btc": 0.49,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": 0.5,
-    "corr90_eth": 0.36,
+    "corr30_eth": 0.52,
+    "corr90_eth": 0.39,
     "n30_eth": 30,
     "n90_eth": 90,
     "flag_rel_changed": false
@@ -1354,17 +1349,17 @@
     "name": "S&P 500",
     "symbol": "^GSPC",
     "unit": "%",
-    "last": 7520.9302,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": -0.38,
-    "chg_5d": -0.63,
+    "last": 7619.3799,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": 1.31,
+    "chg_5d": -0.9,
     "typical_move_90d": 0.63,
-    "flag_big_move": false,
-    "corr30_btc": 0.7,
-    "corr90_btc": 0.47,
+    "flag_big_move": true,
+    "corr30_btc": 0.71,
+    "corr90_btc": 0.48,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": 0.55,
+    "corr30_eth": 0.56,
     "corr90_eth": 0.39,
     "n30_eth": 30,
     "n90_eth": 90,
@@ -1375,17 +1370,17 @@
     "name": "VIX (fear index)",
     "symbol": "^VIX",
     "unit": "%",
-    "last": 19.46,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": -2.31,
-    "chg_5d": -6.58,
-    "typical_move_90d": 6.28,
+    "last": 17.49,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": -10.12,
+    "chg_5d": 5.3,
+    "typical_move_90d": 6.26,
     "flag_big_move": false,
-    "corr30_btc": -0.61,
-    "corr90_btc": -0.38,
+    "corr30_btc": -0.62,
+    "corr90_btc": -0.39,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": -0.51,
+    "corr30_eth": -0.52,
     "corr90_eth": -0.38,
     "n30_eth": 30,
     "n90_eth": 90,
@@ -1396,18 +1391,18 @@
     "name": "MSTR",
     "symbol": "MSTR",
     "unit": "%",
-    "last": 121.07,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": -3.6,
-    "chg_5d": -10.74,
-    "typical_move_90d": 3.8,
+    "last": 122.35,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": 1.06,
+    "chg_5d": -14.16,
+    "typical_move_90d": 3.84,
     "flag_big_move": false,
     "corr30_btc": 0.86,
     "corr90_btc": 0.86,
     "n30_btc": 30,
     "n90_btc": 90,
     "corr30_eth": 0.82,
-    "corr90_eth": 0.8,
+    "corr90_eth": 0.79,
     "n30_eth": 30,
     "n90_eth": 90,
     "flag_rel_changed": false
@@ -1417,11 +1412,11 @@
     "name": "COIN",
     "symbol": "COIN",
     "unit": "%",
-    "last": 132.13,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": -2.92,
-    "chg_5d": -9.16,
-    "typical_move_90d": 3.63,
+    "last": 136.27,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": 3.13,
+    "chg_5d": -10.05,
+    "typical_move_90d": 3.64,
     "flag_big_move": false,
     "corr30_btc": 0.86,
     "corr90_btc": 0.81,
@@ -1438,18 +1433,18 @@
     "name": "Gold",
     "symbol": "GC=F",
     "unit": "%",
-    "last": 4030.2,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": -2.05,
-    "chg_5d": 2.28,
-    "typical_move_90d": 1.05,
+    "last": 4000.5,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": -0.74,
+    "chg_5d": -1.78,
+    "typical_move_90d": 1.06,
     "flag_big_move": false,
-    "corr30_btc": 0.46,
-    "corr90_btc": 0.52,
+    "corr30_btc": 0.47,
+    "corr90_btc": 0.51,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": 0.38,
-    "corr90_eth": 0.46,
+    "corr30_eth": 0.41,
+    "corr90_eth": 0.45,
     "n30_eth": 30,
     "n90_eth": 90,
     "flag_rel_changed": false
@@ -1459,18 +1454,18 @@
     "name": "US dollar index",
     "symbol": "DX-Y.NYB",
     "unit": "%",
-    "last": 102.23,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": 0.57,
-    "chg_5d": 0.35,
-    "typical_move_90d": 0.23,
+    "last": 102.91,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": 0.67,
+    "chg_5d": 1.38,
+    "typical_move_90d": 0.24,
     "flag_big_move": true,
-    "corr30_btc": 0.02,
-    "corr90_btc": -0.24,
+    "corr30_btc": 0.07,
+    "corr90_btc": -0.21,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": -0.0,
-    "corr90_eth": -0.28,
+    "corr30_eth": 0.04,
+    "corr90_eth": -0.24,
     "n30_eth": 30,
     "n90_eth": 90,
     "flag_rel_changed": false
@@ -1480,18 +1475,18 @@
     "name": "Oil (WTI)",
     "symbol": "CL=F",
     "unit": "%",
-    "last": 86.04,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": -0.93,
-    "chg_5d": -10.46,
-    "typical_move_90d": 2.49,
+    "last": 86.53,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": 0.57,
+    "chg_5d": -1.8,
+    "typical_move_90d": 2.5,
     "flag_big_move": false,
-    "corr30_btc": -0.41,
+    "corr30_btc": -0.4,
     "corr90_btc": -0.28,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": -0.4,
-    "corr90_eth": -0.25,
+    "corr30_eth": -0.39,
+    "corr90_eth": -0.26,
     "n30_eth": 30,
     "n90_eth": 90,
     "flag_rel_changed": false
@@ -1501,17 +1496,17 @@
     "name": "US 10-year yield",
     "symbol": "^TNX",
     "unit": "bp",
-    "last": 4.983,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": 11.9,
-    "chg_5d": 3.1,
-    "typical_move_90d": 3.79,
-    "flag_big_move": true,
-    "corr30_btc": 0.3,
+    "last": 4.998,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": 1.5,
+    "chg_5d": 10.4,
+    "typical_move_90d": 3.91,
+    "flag_big_move": false,
+    "corr30_btc": 0.32,
     "corr90_btc": -0.06,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": 0.16,
+    "corr30_eth": 0.17,
     "corr90_eth": -0.05,
     "n30_eth": 30,
     "n90_eth": 90,
@@ -1522,17 +1517,17 @@
     "name": "Yen (USD/JPY)",
     "symbol": "JPY=X",
     "unit": "%",
-    "last": 157.983,
-    "last_close_utc": "2026-11-11 00:00",
-    "chg_1d": -0.2,
-    "chg_5d": 0.04,
+    "last": 158.705,
+    "last_close_utc": "2026-11-12 00:00",
+    "chg_1d": 0.46,
+    "chg_5d": 0.15,
     "typical_move_90d": 0.32,
     "flag_big_move": false,
-    "corr30_btc": 0.39,
+    "corr30_btc": 0.47,
     "corr90_btc": -0.08,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": 0.31,
+    "corr30_eth": 0.37,
     "corr90_eth": -0.07,
     "n30_eth": 30,
     "n90_eth": 90,
@@ -1543,18 +1538,18 @@
     "name": "Junk bonds (HYG)",
     "symbol": "HYG",
     "unit": "%",
-    "last": 77.18,
-    "last_close_utc": "2026-11-10 21:00",
-    "chg_1d": -0.43,
-    "chg_5d": 0.26,
+    "last": 77.35,
+    "last_close_utc": "2026-11-11 21:00",
+    "chg_1d": 0.22,
+    "chg_5d": -0.22,
     "typical_move_90d": 0.19,
-    "flag_big_move": true,
-    "corr30_btc": 0.36,
-    "corr90_btc": 0.35,
+    "flag_big_move": false,
+    "corr30_btc": 0.38,
+    "corr90_btc": 0.34,
     "n30_btc": 30,
     "n90_btc": 90,
-    "corr30_eth": 0.35,
-    "corr90_eth": 0.34,
+    "corr30_eth": 0.37,
+    "corr90_eth": 0.33,
     "n30_eth": 30,
     "n90_eth": 90,
     "flag_rel_changed": false
@@ -1564,15 +1559,15 @@
    "name": "US spot BTC ETFs, net flow",
    "unit": "US$ m",
    "source": "farside.co.uk",
-   "last_date": "2026-11-09",
-   "last": -201.0,
-   "sum_5d": -1084.1,
-   "typical_flow_90d": 222.6,
+   "last_date": "2026-11-11",
+   "last": -299.8,
+   "sum_5d": -1437.9,
+   "typical_flow_90d": 220.4,
    "flag_big_move": false,
-   "corr30_btc": 0.7,
+   "corr30_btc": 0.67,
    "corr90_btc": 0.73,
-   "corr30_eth": 0.57,
-   "corr90_eth": 0.62,
+   "corr30_eth": 0.53,
+   "corr90_eth": 0.63,
    "flag_rel_changed": false
   },
   "thresholds": {
