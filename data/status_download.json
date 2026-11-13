@@ -2,7 +2,7 @@
  "files": {
   "BTCUSDT-5m": {
    "kind": "klines",
-   "rows_added": 288,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -12,11 +12,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:55",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "BTCUSDT-15m": {
    "kind": "klines",
-   "rows_added": 96,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -26,11 +26,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:45",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "BTCUSDT-1h": {
    "kind": "klines",
-   "rows_added": 24,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -40,11 +40,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "BTCUSDT-1d": {
    "kind": "klines",
-   "rows_added": 1,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -54,7 +54,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 00:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "BTCUSDT-funding": {
    "kind": "funding",
@@ -62,16 +62,16 @@
   },
   "BTCUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 28,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-11-12 23:55",
-   "lag_hours": 9.0
+   "lag_hours": 15.9
   },
   "ETHUSDT-5m": {
    "kind": "klines",
-   "rows_added": 288,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -81,11 +81,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:55",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "ETHUSDT-15m": {
    "kind": "klines",
-   "rows_added": 96,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -95,11 +95,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:45",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "ETHUSDT-1h": {
    "kind": "klines",
-   "rows_added": 24,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -109,11 +109,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "ETHUSDT-1d": {
    "kind": "klines",
-   "rows_added": 1,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -123,7 +123,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 00:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "ETHUSDT-funding": {
    "kind": "funding",
@@ -131,16 +131,16 @@
   },
   "ETHUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 28,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-11-12 23:55",
-   "lag_hours": 9.0
+   "lag_hours": 15.9
   },
   "XRPUSDT-5m": {
    "kind": "klines",
-   "rows_added": 288,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -150,11 +150,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:55",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "XRPUSDT-15m": {
    "kind": "klines",
-   "rows_added": 96,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -164,11 +164,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:45",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "XRPUSDT-1h": {
    "kind": "klines",
-   "rows_added": 24,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -178,11 +178,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "XRPUSDT-1d": {
    "kind": "klines",
-   "rows_added": 1,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -192,7 +192,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 00:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "XRPUSDT-funding": {
    "kind": "funding",
@@ -200,16 +200,16 @@
   },
   "XRPUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 26,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-11-12 23:55",
-   "lag_hours": 9.0
+   "lag_hours": 15.9
   },
   "BNBUSDT-5m": {
    "kind": "klines",
-   "rows_added": 288,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -219,11 +219,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:55",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "BNBUSDT-15m": {
    "kind": "klines",
-   "rows_added": 96,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -233,11 +233,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:45",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "BNBUSDT-1h": {
    "kind": "klines",
-   "rows_added": 24,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -247,11 +247,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "BNBUSDT-1d": {
    "kind": "klines",
-   "rows_added": 1,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -261,7 +261,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 00:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "BNBUSDT-funding": {
    "kind": "funding",
@@ -269,16 +269,16 @@
   },
   "BNBUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 28,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-11-12 23:55",
-   "lag_hours": 9.0
+   "lag_hours": 15.9
   },
   "HYPEUSDT-5m": {
    "kind": "klines",
-   "rows_added": 288,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -288,11 +288,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:55",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "HYPEUSDT-15m": {
    "kind": "klines",
-   "rows_added": 96,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -302,11 +302,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:45",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "HYPEUSDT-1h": {
    "kind": "klines",
-   "rows_added": 24,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -316,11 +316,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "HYPEUSDT-1d": {
    "kind": "klines",
-   "rows_added": 1,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -330,7 +330,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 00:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "HYPEUSDT-funding": {
    "kind": "funding",
@@ -338,16 +338,16 @@
   },
   "HYPEUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 19,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-11-12 23:55",
-   "lag_hours": 9.0
+   "lag_hours": 15.9
   },
   "LTCUSDT-5m": {
    "kind": "klines",
-   "rows_added": 288,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -357,11 +357,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:55",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "LTCUSDT-15m": {
    "kind": "klines",
-   "rows_added": 96,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -371,11 +371,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:45",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "LTCUSDT-1h": {
    "kind": "klines",
-   "rows_added": 24,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -385,11 +385,11 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 23:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "LTCUSDT-1d": {
    "kind": "klines",
-   "rows_added": 1,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
@@ -399,7 +399,7 @@
    "known_gap_bars": 0,
    "out_of_order": 0,
    "last_bar_utc": "2026-11-12 00:00",
-   "lag_hours": 8.9
+   "lag_hours": 15.9
   },
   "LTCUSDT-funding": {
    "kind": "funding",
@@ -407,12 +407,12 @@
   },
   "LTCUSDT-metrics": {
    "kind": "metrics",
-   "rows_added": 22,
+   "rows_added": 0,
    "waiting_for": null,
    "skipped_gap_days": [],
    "error": null,
    "last_utc": "2026-11-12 23:55",
-   "lag_hours": 9.0
+   "lag_hours": 15.9
   }
  },
  "problems": [
@@ -441,6 +441,6 @@
   "LTCUSDT-1h: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 23:00 (24 bars)']",
   "LTCUSDT-1d: NEW GAP ['2026-10-28 00:00 .. 2026-10-28 00:00 (1 bars)']"
  ],
- "run_utc": "2026-11-13 08:52",
+ "run_utc": "2026-11-13 15:51",
  "ok": false
 }
