@@ -1,98 +1,98 @@
 {
  "BTCUSDT premium 1h": {
   "file": "data/extra/BTCUSDT-premium-1h.csv",
-  "rows": 60071,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 60095,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "BTCUSDT spot 1h": {
   "file": "data/extra/BTCUSDT-spot-1h.csv",
-  "rows": 60281,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 60305,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "ETHUSDT premium 1h": {
   "file": "data/extra/ETHUSDT-premium-1h.csv",
-  "rows": 60071,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 60095,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "ETHUSDT spot 1h": {
   "file": "data/extra/ETHUSDT-spot-1h.csv",
-  "rows": 60281,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 60305,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "XRPUSDT premium 1h": {
   "file": "data/extra/XRPUSDT-premium-1h.csv",
-  "rows": 59967,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 59991,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "XRPUSDT spot 1h": {
   "file": "data/extra/XRPUSDT-spot-1h.csv",
-  "rows": 60281,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 60305,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "BNBUSDT premium 1h": {
   "file": "data/extra/BNBUSDT-premium-1h.csv",
-  "rows": 59103,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 59127,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "BNBUSDT spot 1h": {
   "file": "data/extra/BNBUSDT-spot-1h.csv",
-  "rows": 60281,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 60305,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "HYPEUSDT premium 1h": {
   "file": "data/extra/HYPEUSDT-premium-1h.csv",
-  "rows": 12806,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 12830,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "HYPEUSDT spot 1h": {
   "file": "data/extra/HYPEUSDT-spot-1h.csv",
-  "rows": 1309,
-  "last_utc": "2026-11-17 23:00",
+  "rows": 1333,
+  "last_utc": "2026-11-18 23:00",
   "error": null
  },
  "coinbase BTC-USD 1h": {
   "file": "data/extra/coinbase-BTC-USD-1h.csv",
-  "rows": 60313,
-  "last_utc": "2026-11-18 16:00",
+  "rows": 60330,
+  "last_utc": "2026-11-19 09:00",
   "error": null
  },
  "coinbase ETH-USD 1h": {
   "file": "data/extra/coinbase-ETH-USD-1h.csv",
-  "rows": 60313,
-  "last_utc": "2026-11-18 16:00",
+  "rows": 60330,
+  "last_utc": "2026-11-19 09:00",
   "error": null
  },
  "deribit DVOL BTC 1h": {
   "file": "data/extra/deribit-dvol-BTC-1h.csv",
-  "rows": 49577,
-  "last_utc": "2026-11-18 16:00",
+  "rows": 49594,
+  "last_utc": "2026-11-19 09:00",
   "error": null
  },
  "deribit options BTC": {
   "file": "data/extra/deribit-options-BTC.csv",
-  "rows": 117,
-  "last_utc": "2026-11-18 17:29",
+  "rows": 118,
+  "last_utc": "2026-11-19 10:39",
   "error": null
  },
  "deribit DVOL ETH 1h": {
   "file": "data/extra/deribit-dvol-ETH-1h.csv",
-  "rows": 49577,
-  "last_utc": "2026-11-18 16:00",
+  "rows": 49594,
+  "last_utc": "2026-11-19 09:00",
   "error": null
  },
  "deribit options ETH": {
   "file": "data/extra/deribit-options-ETH.csv",
-  "rows": 117,
-  "last_utc": "2026-11-18 17:29",
+  "rows": 118,
+  "last_utc": "2026-11-19 10:39",
   "error": null
  },
  "cftc CME bitcoin TFF": {
@@ -101,5 +101,5 @@
   "last_utc": "2026-11-10 00:00",
   "error": null
  },
- "_run_utc": "2026-11-18 17:29"
+ "_run_utc": "2026-11-19 10:39"
 }
