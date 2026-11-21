@@ -1,4 +1,4 @@
-# X3 signal dossiers — data to 2026-11-20 00:00 UTC
+# X3 signal dossiers — data to 2026-11-21 00:00 UTC
 
 Information only — no call. The flags have NOT passed their test (Workstream B: primary p = 0.92); they must never block a trade. Live verdict after 60 live signals.
 
@@ -121,3 +121,27 @@ Information only — no call. The flags have NOT passed their test (Workstream B
 - Case against that: that CI includes the book mean -> not distinguishable from normal; best third: dist_wlevel_R HIGH +0.22R (n=196)
 - Flags: F5 (short, DVOL high in its year)
 - Data gaps: funding after 2026-08-31 not settled (counted 0); no Hyperliquid snapshot history
+
+## XRP SHORT — PW FSB — entry 2026-11-20 20:45 UTC (closed 2026-11-20 21:45, -1.05R)
+
+| Entry | Stop | Target (3R) | Stop % | G3 | 200-DMA |
+|---|---|---|---|---|---|
+| 0.8911 | 0.9017 | 0.8593 | 1.19% | SKIP (OI down/unknown) | below |
+
+| Feature (vs past shorts) | Value | Pct | Third | Past R in that third (n, 95% CI) |
+|---|---|---|---|---|
+| oi_chg_7d ★ | -8.31% | 0.11 | LOW | -0.07R (n=165, -0.31..+0.18) |
+| oi_chg_24h | +3.48% | 0.75 | HIGH | +0.33R (n=166, +0.04..+0.62) |
+| retail_ls_pct90 | 0.926 | 0.60 | MID | +0.15R (n=160, -0.13..+0.41) |
+| taker_ls_24h | 1.102 | 0.68 | HIGH | +0.24R (n=151, -0.04..+0.53) |
+| premium_8h | -0.0415% | 0.49 | MID | +0.21R (n=194, -0.04..+0.47) |
+| dvol_pct365 | n/a | — | — | n/a |
+| perp_cvd_4h | 0.001 | 0.95 | HIGH | +0.08R (n=196, -0.17..+0.34) |
+| perp_cvd_24h | -0.032 | 0.71 | HIGH | +0.15R (n=196, -0.10..+0.42) |
+| dist_wlevel_R | open air | 0.91 | HIGH | +0.22R (n=196, -0.03..+0.48) |
+
+- Book reference: 587 past shorts, +0.14R.
+- Case against: oi_chg_7d in LOW third (pct 0.11): past same-side trades there averaged -0.07R (n=165, 95% CI -0.31..+0.18) vs book +0.14R
+- Case against that: that CI includes the book mean -> not distinguishable from normal; best third: oi_chg_24h HIGH +0.33R (n=166)
+- Flags: F4 (short, OI falling 7d (G3 skip))
+- Data gaps: funding after 2026-08-31 not settled (counted 0); no DVOL for this coin; no Hyperliquid snapshot history
