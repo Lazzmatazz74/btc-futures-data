@@ -1,34 +1,20 @@
 {
  "problems": [],
- "symbols": {
-  "NUUSDT": {
-   "klines": {
-    "rows_added": 0,
-    "waiting_for": "2022-02-16",
-    "error": null,
-    "gap_days_filled": 0,
-    "unfillable": []
-   },
-   "funding": {
-    "rows_added": 0,
-    "error": null
-   }
-  }
- },
+ "symbols": {},
  "categories": {
   "skipped": "no CG_DEMO_KEY secret"
  },
- "rows_added": 6241,
+ "rows_added": 6300,
  "gap_days_filled": 0,
  "new_unfillable_gap_days": 0,
  "known_gap_days": 899,
- "symbols_total": 923,
- "active": 756,
- "ended": 167,
+ "symbols_total": 932,
+ "active": 766,
+ "ended": 166,
  "old_coins": 80,
- "with_missing_days": 885,
- "missing_days_total": 899,
+ "with_missing_days": 887,
+ "missing_days_total": 3531,
  "ended_with_zero_volume_tail": 157,
- "run_utc": "2026-11-16 12:06",
+ "run_utc": "2026-11-23 13:44",
  "ok": true
 }
